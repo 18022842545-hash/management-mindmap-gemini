@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>《管理学原理》期末复习核心考点思维导图</title>
+<style>
+  :root {
+    --bg-page: #f4f6fb;
+    --bg-header: rgba(255, 255, 255, 0.94);
+    --bg-card: #ffffff;
+    --bg-card-hover: #f8fafc;
+    --bg-verbatim: #f8f9fc;
+    --bg-must: #fff5f5;
+    --bg-star-card: #fffdf7;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --text-verbatim: #334155;
+    --border-light: #e2e8f0;
+    --border-card: #cbd5e1;
+    --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.06);
+    --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.08);
+
+    /* Theme branch accents */
+    --c-root: #1e293b;
+    --c-root-bg: #1e293b;
+    --c-root-text: #ffffff;
+
+    --c-teal: #0d9488;
+    --c-teal-soft: #ccfbf1;
+    --c-teal-border: #5eead4;
+    --c-teal-line: #14b8a6;
+
+    --c-indigo: #4f46e5;
+    --c-indigo-soft: #e0e7ff;
+    --c-indigo-border: #a5b4fc;
+    --c-indigo-line: #6366f1;
+
+    --c-violet: #7c3aed;
+    --c-violet-soft: #f3e8ff;
+    --c-violet-border: #d8b4fe;
+    --c-violet-line: #8b5cf6;
+
+    /* Derivative / Marker Badges */
+    --badge-star-bg: #fef3c7;
+    --badge-star-text: #b45309;
+    --badge-star-border: #f59e0b;
+
+    --badge-must-bg: #fee2e2;
+    --badge-must-text: #b91c1c;
+    --badge-must-border: #ef4444;
+
+    --badge-diff-bg: #ffedd5;
+    --badge-diff-text: #c2410c;
+
+    --badge-def-bg: #e0f2fe;
+    --badge-def-text: #0369a1;
+
+    --badge-list-bg: #dcfce7;
+    --badge-list-text: #15803d;
+
+    --badge-page-bg: #f1f5f9;
+    --badge-page-text: #475569;
+
+    --badge-orig-bg: #ede9fe;
+    --badge-orig-text: #6d28d9;
+
+    --btn-bg: #ffffff;
+    --btn-text: #334155;
+    --btn-border: #cbd5e1;
+    --btn-active-bg: #2563eb;
+    --btn-active-text: #ffffff;
+    --btn-active-border: #2563eb;
+
+    --toggle-bg: #ffffff;
+    --toggle-border: #94a3b8;
+    --toggle-text: #334155;
+    --toggle-hover-bg: #eff6ff;
+
+    --guide-line: #cbd5e1;
+  }
+
+  html[data-theme="dark"] {
+    --bg-page: #0f172a;
+    --bg-header: rgba(15, 23, 42, 0.94);
+    --bg-card: #1e293b;
+    --bg-card-hover: #263449;
+    --bg-verbatim: #162032;
+    --bg-must: #2d1a22;
+    --bg-star-card: #252218;
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-verbatim: #dbeafe;
+    --border-light: #334155;
+    --border-card: #475569;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+
+    --c-root: #38bdf8;
+    --c-root-bg: #0284c7;
+    --c-root-text: #ffffff;
+
+    --c-teal: #2dd4bf;
+    --c-teal-soft: rgba(45, 212, 191, 0.16);
+    --c-teal-border: #0d9488;
+    --c-teal-line: #2dd4bf;
+
+    --c-indigo: #818cf8;
+    --c-indigo-soft: rgba(129, 140, 248, 0.18);
+    --c-indigo-border: #4f46e5;
+    --c-indigo-line: #818cf8;
+
+    --c-violet: #c084fc;
+    --c-violet-soft: rgba(192, 132, 252, 0.18);
+    --c-violet-border: #7c3aed;
+    --c-violet-line: #c084fc;
+
+    --badge-star-bg: rgba(245, 158, 11, 0.2);
+    --badge-star-text: #fbbf24;
+    --badge-star-border: #d97706;
+
+    --badge-must-bg: rgba(239, 68, 68, 0.22);
+    --badge-must-text: #fca5a5;
+    --badge-must-border: #ef4444;
+
+    --badge-diff-bg: rgba(249, 115, 22, 0.2);
+    --badge-diff-text: #fdba74;
+
+    --badge-def-bg: rgba(14, 165, 233, 0.2);
+    --badge-def-text: #7dd3fc;
+
+    --badge-list-bg: rgba(34, 197, 94, 0.2);
+    --badge-list-text: #86efac;
+
+    --badge-page-bg: rgba(148, 163, 184, 0.2);
+    --badge-page-text: #cbd5e1;
+
+    --badge-orig-bg: rgba(139, 92, 246, 0.25);
+    --badge-orig-text: #ddd6fe;
+
+    --btn-bg: #1e293b;
+    --btn-text: #e2e8f0;
+    --btn-border: #475569;
+    --btn-active-bg: #3b82f6;
+    --btn-active-text: #ffffff;
+    --btn-active-border: #3b82f6;
+
+    --toggle-bg: #0f172a;
+    --toggle-border: #64748b;
+    --toggle-text: #f1f5f9;
+    --toggle-hover-bg: #334155;
+
+    --guide-line: #334155;
+  }
+
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Sticky Top Toolbar */
+  .top-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--bg-header);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: var(--shadow-sm);
+    padding: 10px 16px;
+    width: 100%;
+  }
+
+  .header-inner {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px 12px;
+  }
+
+  .brand-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  .brand-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-primary);
+    letter-spacing: 0.2px;
+  }
+
+  .stats-pill {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--badge-page-bg);
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+
+  .controls-area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .mode-group, .view-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .ctrl-divider {
+    width: 1px;
+    height: 22px;
+    background: var(--border-light);
+    margin: 0 2px;
+  }
+
+  .ctrl-btn {
+    appearance: none;
+    border: 1px solid var(--btn-border);
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s, transform 0.1s;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .ctrl-btn:hover:not(:disabled) {
+    border-color: var(--btn-active-border);
+  }
+
+  .ctrl-btn:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  .ctrl-btn.is-active {
+    background: var(--btn-active-bg);
+    color: var(--btn-active-text);
+    border-color: var(--btn-active-border);
+    font-weight: 600;
+  }
+
+  .ctrl-btn.star-mode-btn.is-active {
+    background: #d97706;
+    border-color: #d97706;
+    color: #ffffff;
+  }
+
+  .ctrl-btn:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+
+  /* Legend Bar */
+  .legend-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 12px;
+    padding: 7px 16px;
+    background: var(--bg-card);
+    border-bottom: 1px solid var(--border-light);
+    font-size: 12px;
+    color: var(--text-secondary);
+    width: 100%;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* Badges */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 10.5px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 1.5px 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .badge-star {
+    background: var(--badge-star-bg);
+    color: var(--badge-star-text);
+    border: 1px solid var(--badge-star-border);
+  }
+
+  .badge-must {
+    background: var(--badge-must-bg);
+    color: var(--badge-must-text);
+    border: 1px solid var(--badge-must-border);
+  }
+
+  .badge-diff {
+    background: var(--badge-diff-bg);
+    color: var(--badge-diff-text);
+  }
+
+  .badge-def {
+    background: var(--badge-def-bg);
+    color: var(--badge-def-text);
+  }
+
+  .badge-list {
+    background: var(--badge-list-bg);
+    color: var(--badge-list-text);
+  }
+
+  .badge-page {
+    background: var(--badge-page-bg);
+    color: var(--badge-page-text);
+  }
+
+  .badge-orig {
+    background: var(--badge-orig-bg);
+    color: var(--badge-orig-text);
+  }
+
+  .badge-chapter {
+    font-size: 10.5px;
+    padding: 1.5px 6px;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  /* Main Workspace Container */
+  .workspace {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    overflow-x: hidden;
+  }
+
+  .mindmap-stage {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .connector-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: visible;
+  }
+
+  .tree-root {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+  }
+
+  /* Shared Node Card Styling */
+  .node-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 8px;
+    padding: 7px 9px;
+    box-shadow: var(--shadow-sm);
+    transition: background 0.15s, border-color 0.15s, box-shadow 0.15s;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    min-width: 0;
+    cursor: pointer;
+  }
+
+  .node-card:hover {
+    background: var(--bg-card-hover);
+    box-shadow: var(--shadow-md);
+  }
+
+  .node-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    margin-bottom: 3px;
+  }
+
+  .node-badges:empty {
+    display: none;
+  }
+
+  .node-title {
+    font-size: 12.5px;
+    color: var(--text-primary);
+    line-height: 1.42;
+    white-space: pre-line;
+  }
+
+  /* Root card */
+  .depth-0 > .node-col > .node-card {
+    background: var(--c-root-bg);
+    border-color: var(--c-root-bg);
+    color: var(--c-root-text);
+    padding: 11px 10px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+  }
+
+  .depth-0 > .node-col > .node-card .node-title {
+    color: var(--c-root-text);
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  /* Chapter cards */
+  .depth-1.theme-teal > .node-col > .node-card {
+    background: var(--c-teal-soft);
+    border: 1.5px solid var(--c-teal-border);
+    border-left: 4px solid var(--c-teal);
+  }
+  .depth-1.theme-teal > .node-col > .node-card .badge-chapter {
+    background: var(--c-teal);
+    color: #fff;
+  }
+
+  .depth-1.theme-indigo > .node-col > .node-card {
+    background: var(--c-indigo-soft);
+    border: 1.5px solid var(--c-indigo-border);
+    border-left: 4px solid var(--c-indigo);
+  }
+  .depth-1.theme-indigo > .node-col > .node-card .badge-chapter {
+    background: var(--c-indigo);
+    color: #fff;
+  }
+
+  .depth-1.theme-violet > .node-col > .node-card {
+    background: var(--c-violet-soft);
+    border: 1.5px solid var(--c-violet-border);
+    border-left: 4px solid var(--c-violet);
+  }
+  .depth-1.theme-violet > .node-col > .node-card .badge-chapter {
+    background: var(--c-violet);
+    color: #fff;
+  }
+
+  .depth-1 > .node-col > .node-card .node-title {
+    font-weight: 700;
+    font-size: 13.5px;
+  }
+
+  /* Section cards */
+  .depth-2.theme-teal > .node-col > .node-card {
+    border-left: 3.5px solid var(--c-teal);
+  }
+  .depth-2.theme-indigo > .node-col > .node-card {
+    border-left: 3.5px solid var(--c-indigo);
+  }
+  .depth-2.theme-violet > .node-col > .node-card {
+    border-left: 3.5px solid var(--c-violet);
+  }
+  .depth-2 > .node-col > .node-card .node-title {
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+  /* Star & ExamMust visual derivatives on framework nodes */
+  .tree-branch.is-star-node[data-type="framework"] > .node-col > .node-card {
+    background: var(--bg-star-card);
+    border-color: var(--badge-star-border);
+  }
+
+  .tree-branch.is-must-node[data-type="framework"] > .node-col > .node-card,
+  .tree-branch.is-must-node[data-type="section"] > .node-col > .node-card {
+    background: var(--bg-must);
+    border-color: var(--badge-must-border);
+    border-left: 4px solid var(--badge-must-border);
+  }
+
+  /* Verbatim (PPT Original Text) leaf node styling */
+  .tree-branch[data-type="verbatim"] > .node-col > .node-card {
+    background: var(--bg-verbatim);
+    border: 1px dashed var(--border-card);
+    border-left: 3.5px solid #8b5cf6;
+    cursor: default;
+    padding: 8px 10px;
+  }
+
+  .tree-branch[data-type="verbatim"] > .node-col > .node-card .node-title {
+    font-size: 12px;
+    color: var(--text-verbatim);
+    line-height: 1.52;
+  }
+
+  /* Collapse / Expand (− / +) Toggle Button */
+  .toggle-btn {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+    border-radius: 50%;
+    border: 1.5px solid var(--toggle-border);
+    background: var(--toggle-bg);
+    color: var(--toggle-text);
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    user-select: none;
+    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+  }
+
+  .toggle-btn:hover {
+    background: var(--toggle-hover-bg);
+    border-color: var(--btn-active-border);
+    color: var(--btn-active-border);
+  }
+
+  .tree-branch.theme-teal > .node-col > .toggle-btn {
+    border-color: var(--c-teal);
+    color: var(--c-teal);
+  }
+  .tree-branch.theme-indigo > .node-col > .toggle-btn {
+    border-color: var(--c-indigo);
+    color: var(--c-indigo);
+  }
+  .tree-branch.theme-violet > .node-col > .toggle-btn {
+    border-color: var(--c-violet);
+    color: var(--c-violet);
+  }
+
+  /* =========================================================
+     VIEW 1: HORIZONTAL MINDMAP (.view-mindmap)
+     ========================================================= */
+  .view-mindmap .tree-branch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .view-mindmap .node-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    flex-shrink: 0;
+    min-width: 0;
+  }
+
+  .view-mindmap .node-col > .node-card {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .view-mindmap .depth-0 > .node-col { width: var(--col-0, 110px); flex-basis: var(--col-0, 110px); }
+  .view-mindmap .depth-1 > .node-col { width: var(--col-1, 150px); flex-basis: var(--col-1, 150px); }
+  .view-mindmap .depth-2 > .node-col { width: var(--col-2, 180px); flex-basis: var(--col-2, 180px); }
+  .view-mindmap .depth-3 > .node-col { width: var(--col-3, 220px); flex-basis: var(--col-3, 220px); }
+  .view-mindmap .depth-4 > .node-col { width: var(--col-4, 260px); flex-basis: var(--col-4, 260px); }
+  .view-mindmap .depth-5 > .node-col { width: var(--col-5, 340px); flex-basis: var(--col-5, 340px); }
+
+  .view-mindmap .children-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding-left: var(--gap-x, 24px);
+    min-width: 0;
+    flex: 1 1 auto;
+  }
+
+  .view-mindmap .depth-0 > .children-col {
+    gap: 22px;
+  }
+
+  .view-mindmap .depth-1 > .children-col {
+    gap: 14px;
+  }
+
+  /* =========================================================
+     VIEW 2: VERTICAL OUTLINE (.view-outline)
+     ========================================================= */
+  .view-outline .connector-svg {
+    display: none !important;
+  }
+
+  .view-outline .tree-branch {
+    display: block;
+    width: 100%;
+    margin-bottom: 6px;
+  }
+
+  .view-outline .depth-1 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  .view-outline .node-col {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100% !important;
+  }
+
+  .view-outline .node-col > .toggle-btn {
+    order: -1;
+    margin-top: 7px;
+  }
+
+  .view-outline .tree-branch[data-type="verbatim"] > .node-col {
+    padding-left: 28px;
+  }
+
+  .view-outline .node-col > .node-card {
+    flex: 1 1 auto;
+    width: auto;
+  }
+
+  .view-outline .depth-0 > .node-col > .node-card {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
+
+  .view-outline .depth-0 > .node-col > .node-card .node-title {
+    white-space: normal;
+    font-size: 16px;
+  }
+
+  .view-outline .children-col {
+    display: block;
+    margin-left: 10px;
+    padding-left: 14px;
+    margin-top: 6px;
+    border-left: 2px solid var(--guide-line);
+  }
+
+  .view-outline .depth-1.theme-teal > .children-col { border-left-color: var(--c-teal-border); }
+  .view-outline .depth-1.theme-indigo > .children-col { border-left-color: var(--c-indigo-border); }
+  .view-outline .depth-1.theme-violet > .children-col { border-left-color: var(--c-violet-border); }
+
+  /* =========================================================
+     COLLAPSED & STAR-FILTERED STATES
+     ========================================================= */
+  .tree-branch.is-collapsed > .children-col {
+    display: none !important;
+  }
+
+  .tree-branch.is-hidden-star {
+    display: none !important;
+  }
+
+  /* Responsive Mobile Hint */
+  .mobile-auto-hint {
+    font-size: 11.5px;
+    color: var(--text-muted);
+    display: none;
+  }
+
+  @media (max-width: 759.98px) {
+    .workspace {
+      padding: 10px;
+    }
+    .ctrl-divider {
+      display: none;
+    }
+    .mobile-auto-hint {
+      display: inline;
+    }
+  }
+
+  /* =========================================================
+     PRINT MODE: AUTO EXPAND ALL & CLEAN FULL-WIDTH PRINT
+     ========================================================= */
+  @media print {
+    html, body {
+      background: #ffffff !important;
+      color: #000000 !important;
+      overflow: visible !important;
+    }
+    .top-header {
+      position: static !important;
+      box-shadow: none !important;
+      border-bottom: 2px solid #000 !important;
+    }
+    .controls-area {
+      display: none !important;
+    }
+    .connector-svg {
+      display: none !important;
+    }
+    /* Automatically expand ALL nodes & show all branches when printing! */
+    .tree-branch {
+      display: block !important;
+      width: 100% !important;
+      margin-bottom: 5px !important;
+      break-inside: avoid;
+    }
+    .tree-branch.is-hidden-star {
+      display: block !important;
+    }
+    .tree-branch > .children-col,
+    .tree-branch.is-collapsed > .children-col {
+      display: block !important;
+      margin-left: 10px !important;
+      padding-left: 12px !important;
+      margin-top: 5px !important;
+      border-left: 1.5px solid #94a3b8 !important;
+    }
+    .node-col {
+      display: flex !important;
+      width: 100% !important;
+      align-items: flex-start !important;
+      gap: 6px !important;
+    }
+    .toggle-btn {
+      display: none !important;
+    }
+    .node-card {
+      box-shadow: none !important;
+      width: 100% !important;
+      break-inside: avoid;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="top-header">
+  <div class="header-inner">
+    <div class="brand-area">
+      <h1 class="brand-title">🧠 《管理学原理》期末核心考点思维导图</h1>
+      <span class="stats-pill" id="statsPill">3章 · 16节 · 完整考点含原文</span>
+      <span class="mobile-auto-hint">（手机窄屏已自动切换竖排大纲）</span>
+    </div>
+
+    <div class="controls-area">
+      <div class="mode-group" role="group" aria-label="展开模式切换">
+        <button type="button" class="ctrl-btn" data-mode="outline" id="btnModeOutline">只看大纲</button>
+        <button type="button" class="ctrl-btn is-active" data-mode="framework" id="btnModeFramework">看完整框架</button>
+        <button type="button" class="ctrl-btn" data-mode="all" id="btnModeAll">全部展开（含原文）</button>
+        <button type="button" class="ctrl-btn star-mode-btn" data-mode="star" id="btnModeStar">只看★重点</button>
+      </div>
+
+      <span class="ctrl-divider"></span>
+
+      <div class="view-group" role="group" aria-label="视图切换">
+        <button type="button" class="ctrl-btn is-active" id="btnViewMindmap">导图视图</button>
+        <button type="button" class="ctrl-btn" id="btnViewOutline">大纲视图</button>
+      </div>
+
+      <span class="ctrl-divider"></span>
+
+      <button type="button" class="ctrl-btn" id="btnDarkToggle" title="切换深色/浅色模式">🌙 深色模式</button>
+    </div>
+  </div>
+</header>
+
+<div class="legend-bar" aria-label="重点标记说明">
+  <strong>考点标记图例：</strong>
+  <span class="legend-item"><span class="badge badge-must">🔥 必考</span> 课堂划重点/高频核心</span>
+  <span class="legend-item"><span class="badge badge-star">★ 重点</span> 重点掌握分支</span>
+  <span class="legend-item"><span class="badge badge-diff">⚖️ 辨析</span> 易混对比单选</span>
+  <span class="legend-item"><span class="badge badge-def">📌 定义</span> 名词解释概念</span>
+  <span class="legend-item"><span class="badge badge-list">🔢 要点</span> 简答/多选清单</span>
+  <span class="legend-item"><span class="badge badge-page">📖 Pxx</span> 教材对应页码</span>
+  <span class="legend-item"><span class="badge badge-orig">📄 原文</span> PPT一字不改原句（点 + 展开）</span>
+</div>
+
+<main class="workspace view-mindmap" id="workspace">
+  <div class="mindmap-stage" id="mindmapStage">
+    <svg class="connector-svg" id="connectorSvg" aria-hidden="true"></svg>
+    <div class="tree-root" id="treeRoot"></div>
+  </div>
+</main>
+
+<script>
+(function() {
+  const DATA = {"id": "root", "type": "root", "theme": "root", "title": "《管理学原理》\n期末核心考点", "star": true, "children": [{"id": "ch1", "type": "chapter", "theme": "teal", "title": "第一章 管理导论", "badge": "基础篇", "star": true, "children": [{"id": "ch1_s1", "type": "section", "title": "1.1 组织与管理产生的原因", "star": true, "children": [{"type": "framework", "title": "共同劳动与管理产生的关系", "tag": "辨析", "star": true, "children": [{"type": "framework", "title": "共同劳动产生组织/团队管理（非管理产生的唯一原因）：两人及以上共同劳动必然产生协调问题", "star": true, "children": [{"type": "verbatim", "title": "• 共同劳动是组织或者团队管理产生的原因，但不是管理产生的原因。\n• 共同劳动就产生了管理：两个或者两个以上的人在一起劳动，必然就会产生相互之间的协调问题。", "id": "n_6", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_5", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_4", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "组织的形成、创立三要素与运作原理", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "组织的基本特征与形成要点（发起三条件 → 形成三结果）", "children": [{"type": "verbatim", "title": "• 组织特征：有一个共同的目标；组织结构。\n• 发起条件：领导人发起；共同协作的意愿；广泛的信息沟通。\n• 形成结果：达成一个共同的目标；形成一支志同道合、（能力互补）的团队；形成愿意共同遵循的群体规范。", "id": "n_9", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_8", "depth": 4, "theme": "teal", "hasStarBranch": false}, {"type": "framework", "title": "影响组织创立（三要素：共同目标、创业团队、组织规范）的关键要素", "star": true, "children": [{"type": "verbatim", "title": "• 核心三要素：共同目标、创业团队、组织规范（围绕发起人----领导人）。\n• 创业精神、协作意愿 → 促成“共同目标”与“创业团队”。\n• 沟通畅通 → 促成“共同目标”与“组织规范”。", "id": "n_11", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_10", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "组织的功能、手段与运作机制（分工与协作）", "star": true, "children": [{"type": "verbatim", "title": "• 功能：克服个人力量的局限性，实现靠个人力量无法实现或难以有效实现的目标。\n• 手段：通过分工，充分发挥各人特长；通过协作，形成集体力量。（条件：组织成员能力互补、沟通顺畅、组织成员志同道合）\n• 机制：组织成员双向选择、自由组合", "id": "n_13", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_12", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_7", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "组织管理要点与组织需要管理的原因", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "组织管理三大要点：定位（存在基础）、激励（发挥功能关键）、规范（运作与信任基础）", "star": true, "children": [{"type": "verbatim", "title": "• 定位：确立能够为群体所接受和认同的共同的价值观和发展目标，突现本组织与其他组织的区别，这是一个组织得以存在的基础。\n• 激励：调动员工的能动性，使组织充满创造力。组织的主体是人，它的运作依赖于人、其功能也是为了满足人的需要，致力于创造一种激发每一个员工主动力和创造力的良好气氛，是组织最大限度地发挥其功能的关键。\n• 规范：明确各项规范，建立相互信任，并以此作为组织运作的基础。规范是相互信任的基础，而信任是人们之所以在一起为共同目标而努力的基础。", "id": "n_16", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_15", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "组织为什么需要管理：个体四大差异 + 资源有限", "children": [{"type": "verbatim", "title": "• 组织由一个个个体组成，每一个个体相互之间：认识不同----思想；追求不同----利益；能力不同----工作分配；个性不同----配合协调。\n• 资源有限----如何使用、决策----目标最大化\n• 组织管理：如何将不同的个体团结在一起，以有限的资源实现尽可能高的组织目标，更好地满足每一个个体的需求。", "id": "n_18", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_17", "depth": 4, "theme": "teal", "hasStarBranch": false}, {"type": "framework", "title": "企业作为特殊社会经济组织的生产活动与运作背景", "children": [{"type": "verbatim", "title": "• 企业的生产活动包括：企业生产经营的基本工作；企业产品的生产制造过程。借助特定渠道把特定产品利用特定方式转移到需要这种产品的特定消费者手中。（以企业生产为例：资源筹措 → 资源转换 → 产品销售或成果处理）\n• 企业在下述背景下进行的：1. 企业所需资源是稀缺；2. 内部活动成果需要到外部实现；3. 产品是生产者联合劳动的成果。\n• 企业在上述条件下进行运作：既要注意选择正确的活动方向保证产品符合市场的需求；又要注意运用恰当的方法与技术保证有限资源的充分利用。因此，需要进行有效的管理活动", "id": "n_20", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_19", "depth": 4, "theme": "teal", "hasStarBranch": false}], "id": "n_14", "depth": 3, "theme": "teal", "hasStarBranch": true}], "depth": 2, "theme": "teal", "hasStarBranch": true}, {"id": "ch1_s2", "type": "section", "title": "1.2 管理的实质、对象与有效管理", "star": true, "children": [{"type": "framework", "title": "为什么需要管理：无限欲望与有限资源的矛盾协调", "tag": "定义", "star": true, "children": [{"type": "framework", "title": "根本矛盾：人的欲望（无限的） vs 投入资源（有限的） → 协调", "star": true, "children": [{"type": "verbatim", "title": "• 资源（有限的）—投入→ 满足人的欲望（无限的） → 欲望的无限性与资源的有限性之间的矛盾 → 协调", "id": "n_24", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_23", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "四种协调方式对比：生产、战争、道德、管理（科学提高资源利用率）", "tag": "辨析", "star": true, "children": [{"type": "verbatim", "title": "• 生产：通过劳动向自然界要资源，从而在一定程度上满足自身欲望；\n• 战争：通过掠夺他人资源来扩展自身资源，从而满足自己的欲望\n• 道德：通过教育约束每一个人的欲望，使有限的资源足以满足人的欲望；\n• 管理：通过科学的方法提高资源的利用率，力求以有限的资源实现尽可能多的欲望。", "id": "n_26", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_25", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_22", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的对象——资源（人、财、物、信息、技术、时间等）", "tag": "要点", "children": [{"type": "framework", "title": "管理对象的构成要素及五大核心资源内涵", "children": [{"type": "verbatim", "title": "• 管理对象——资源：人、财、物、时间、地点、信息、技术、产品、客户。\n• 管理对象是指管理者实施管理活动的对象。在一个组织中，管理对象主要是指人、财、物、信息、技术、时间等\n• 人力：预备劳动力的，被组织所利用的人。\n• 物力：设备、材料、仪器、能源、以及物资的管理，使之物尽其用，提高利用率。\n• 财力：经济和财务，是一个组织在一定时期内所掌握和支配的物质资料进行有效管理，保证管理计划的完成。\n• 信息：信息的管理是提高管理效能的重要部分。\n• 时间：管理应该考虑如何在尽可能短的时间内，做更多的事情，充分利用时间。", "id": "n_29", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_28", "depth": 4, "theme": "teal", "hasStarBranch": false}], "id": "n_27", "depth": 3, "theme": "teal", "hasStarBranch": false}, {"type": "framework", "title": "有效管理：效率、效果与效益的关系", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "framework", "title": "管理的实质与两项基本要求（做正确的事情 + 正确地做事情）", "star": true, "children": [{"type": "verbatim", "title": "• 管理的实质是：以有限的资源实现尽可能多或高的目标的一种手段。\n• 既要注意选择正确的活动方向保证产品符合市场的需求（做正确的事情）\n• 又要注意运用恰当的方法与技术保证有限资源的充分利用（正确地做事情）", "id": "n_32", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_31", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "效率（方法） vs 效果（有效性） vs 效益（决策）：效果=效益+效率", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 效率：用正确的方法做事情——强调的是方法\n• 效果：实现目标的程度——强调的是工作的有效性\n• 效益：用正确的方法做正确的事情——强调的是决策\n• 也就是：既要讲效率，又要讲效果；效果=效益+效率", "id": "n_34", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_33", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_30", "depth": 3, "theme": "teal", "hasStarBranch": true}], "depth": 2, "theme": "teal", "hasStarBranch": true}, {"id": "ch1_s3", "type": "section", "title": "1.3 管理的概念、本质与双重属性", "star": true, "children": [{"type": "framework", "title": "不同学者对管理概念的代表性见解（人物匹配考点）", "tag": "辨析", "star": true, "children": [{"type": "framework", "title": "泰勒（1911）、法约尔（1916）、孔茨与奥唐内尔（1955）、西蒙（1960）、罗宾斯和库尔塔（1996）", "star": true, "children": [{"type": "verbatim", "title": "• 何谓管理？不同的研究者就有着各种各样的见解：管理就是管人；管理就是决策；管理就是研究系统运行的规律，据此设计系统运行的规则并不断调整；管理就是实行计划、组织、指挥、协调和控制的过程……\n• ▲1911年，科学管理的奠基人泰勒（Frederick.W.Taylor）认为“管理就是确切地了解你希望工人干什么，然后设法使他们用最好、最节约的方法完成它”。\n• ▲1916年，古典管理学家亨利·法约尔（Henri Fayol）在他的著作《工业管理与一般管理》中认为“管理，就是实行计划、组织、指挥、协调和控制”。\n• ▲1955年，管理学家孔茨（Harold Koontz）与奥唐内尔(Cyril O.Donnell)合著的《管理学》中认为,管理就是设计并保持一种良好的环境，使人在群体里高效率地完成既定目标的过程。\n• ▲1960年,诺贝尔经济学奖获得者西蒙（Herbert A.Simon）在《管理决策的新科学》中提出：“管理就是决策”。\n• ▲1996年，罗宾斯和库尔塔（Robbins and Coultar）提出，“管理这一术语指的是和其他人一起并且通过其他人来切实有效完成活动的过程”。", "id": "n_38", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_37", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_36", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "教材对“管理”的标准定义及其五层理解", "tag": "定义", "page": "P24", "examMust": true, "star": true, "children": [{"type": "framework", "title": "管理的概念（综合各家观点）", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "所谓管理：管理就是为了有效地实现组织目标，由管理者利用相关知识、技术和方法对组织活动进行决策、组织、领导、控制并不断创新的过程。(为了实现一定的目标而采用的一种管理手段）", "id": "n_41", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_40", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "对管理定义的五点理解：目的、本质、主体、客体、综合过程（教材P24）", "page": "P24", "star": true, "children": [{"type": "verbatim", "title": "• ▲管理的目的是为了有效地实现组织预定的目标。（→ 保证组织活动顺利进行；较少的资源，合理的手段实现目标）\n• ▲管理的本质是协调，包括协调组织资源、协调组织与外部环境的关系；\n• ▲管理的主体是具有专门知识、利用专门技术和方法来进行专门活动的管理者。\n• ▲管理的客体 是组织活动及其参与要素。\n• ▲管理 是一个包括多阶段、多项工作的综合过程：决策、组织、领导、控制、创新……", "id": "n_43", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_42", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_39", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的本质、科学性与艺术性、自然属性与社会属性", "tag": "辨析", "page": "P28-29", "examMust": true, "star": true, "children": [{"type": "framework", "title": "管理的本质：对人的行为进行协调", "star": true, "children": [{"type": "verbatim", "title": "• 管理是对人或对人的行为的管理\n• 管理的本质是对人的行为进行协调", "id": "n_46", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_45", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的科学性（客观规律与原则理论）与艺术性（灵活运用与沟通技巧）", "page": "P28", "star": true, "children": [{"type": "verbatim", "title": "• 科学性：管理是一门科学，它是管理学者和管理实践者在长期总结管理工作客观规律的基础上形成了一系列基本的管理原则和管理理论，管理人员如果运用这些原则或以管理理论为指导，并能够根据实际情况行事，就能够把管理工作做得更好。\n• 艺术性：管理的艺术性是指管理者在实践活动中对管理理论运用的灵活性和对管理方法选择的技巧性。（管理的艺术在于沟通的技巧和真诚。）", "id": "n_48", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_47", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的二重性：自然属性（生产力/社会化大生产） vs 社会属性（生产关系/社会制度）", "tag": "辨析", "page": "P29", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 社会生产是通过人们的共同劳动构成的，如果不进行有效的管理，社会也就无法发展，这是一个规律，因此管理具有自然属性\n• 协调人们的共同劳动，必然要从分体现生产资料所有者的指挥和监督，此时，管理又体现出生产关系——社会属性\n• 自然属性：同生产力、社会化大生产相联系\n• 社会属性：同生产关系、社会制度相联系", "id": "n_50", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_49", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_44", "depth": 3, "theme": "teal", "hasStarBranch": true}], "depth": 2, "theme": "teal", "hasStarBranch": true}, {"id": "ch1_s4", "type": "section", "title": "1.4 管理的职能与系统过程", "star": true, "children": [{"type": "framework", "title": "管理职能划分的演变与本书职能体系", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "五职能（法约尔/孔茨）→ 四职能 → 七职能 → 本书五职能：计划（决策）、组织、领导、控制、创新", "star": true, "children": [{"type": "verbatim", "title": "• 法国工业家亨利·法约尔在20世纪20年代提出管理的职能有五种：计划、组织、指挥、协调和控制。\n• 20世纪50年代，美国加州大学洛杉矶分校的哈罗德·孔茨和西里尔·奥唐纳将管理的职能另外分为计划、组织、人员配备、指导和控制。\n• 后来的很多教科书习惯上将管理的职能分为四种：计划、组织、领导和控制。\n• 2000年以后很多《管理学》的教科书中，将管理的职能确定为七种：信息获取、决策、计划、组织、领导、控制和创新。\n• 本书对管理职能划分是：计划（决策）、组织、领导、控制、创新", "id": "n_54", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_53", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_52", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的四大职能核心内涵与循环关系", "tag": "要点", "page": "P25-26", "examMust": true, "star": true, "children": [{"type": "framework", "title": "四大职能精准定位：决策/计划（资源配置）、组织（分工协作）、领导（调动积极性）、控制（纠偏）", "page": "P25-26", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 决策（计划工作）：确立目标、制订行动方案。——着眼于有限资源的合理配置；\n• 组织工作：组织设计、人员配备、权力配置。——着重于合理的分工与明确的协作关系的建立；\n• 领导工作：指导、协调、激励。——致力于积极性的调动和方向的把握；\n• 控制工作：检查和监督。——着力于纠偏", "id": "n_57", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_56", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "各职能之间的相互关系与系统循环过程（反馈闭环与融入创新）", "children": [{"type": "verbatim", "title": "• 各职能之间的相互关系：决策与计划 → 组织 → 领导 → 控制（循环）；中心：管理者需要时时观察环境做调整；任何一个环节中都能融入创新。\n• 从如何有效实现目标的角度出发，管理是一个由四大职能所构成的一个循环往复的过程。（有限资源 → 计划工作 → 组织工作 → 领导工作 → 控制工作［反馈回计划工作］ → 管理目标；低浪费（讲求效率）↔ 高成就（讲求效益））", "id": "n_59", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_58", "depth": 4, "theme": "teal", "hasStarBranch": false}], "id": "n_55", "depth": 3, "theme": "teal", "hasStarBranch": true}], "depth": 2, "theme": "teal", "hasStarBranch": true}, {"id": "ch1_s5", "type": "section", "title": "1.5 管理者：层次、角色与技能", "star": true, "children": [{"type": "framework", "title": "管理者的界定与纵横分类", "tag": "定义", "star": true, "children": [{"type": "framework", "title": "判断管理者的三条标准与管理者定义", "children": [{"type": "verbatim", "title": "• 在一个组织之中，是组织中的一种角色（有头衔、组织正式任命）；\n• 从事管理工作，履行管理四大职能；\n• 有直接下属，负责指挥下属开展各项工作（有特权和额外责任）。\n• 管理者是在组织中组织开展管理工作并对组织绩效负责的人\n• 从事管理工作，负有领导和指挥下级去完成任务、职责的企业成员就是管理者。他通过协调和监视其他人的工作来完成组织活动中的目标。", "id": "n_63", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_62", "depth": 4, "theme": "teal", "hasStarBranch": false}, {"type": "framework", "title": "管理者的纵向三层次（高层、中层、基层）与横向领域分类", "star": true, "children": [{"type": "verbatim", "title": "• 高层管理者：高层管理者是必须对组织的整体运作负责的人，他们制定战略与目标，代表企业与外界交往，根据环境的变化和机会确定组织的发展方向和使命。\n• 中层管理者：中层管理者是企业的中坚力量，他们执行贯彻高层管理者的意图，把任务落到基层单位，并检查督促协调基层管理者的工作，保证任务的完成。\n• 基层管理者：基层管理者是处于最前线或最基层的管理者，是从事生产、作业和其他业务工作的管理者。\n• 横向领域划分：业务、财务、人事、行政、技术、其他。", "id": "n_65", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_64", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_61", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "亨利·明茨伯格：管理者角色理论（三大类10种角色）", "tag": "要点", "page": "P221-222", "examMust": true, "star": true, "children": [{"type": "framework", "title": "角色理论核心观点（投入—产出系统，领导者角色最显著）", "page": "P221-222", "star": true, "children": [{"type": "verbatim", "title": "• 主要观点：管理者需要在不同的角色间进行转换。\n• 角色是指属于一定职责或地位的一套有条理的行为。\n• 明茨伯格认为，10种角色形成一个结合起来的整体，管理者是一个投入—产出的系统，权威和地位产生人际关系方面的角色，这方面的角色导致投入（信息），而这又导致产出（信息和决策）。任何一种角色的缺失都可能使得其他角色无法完整实现。\n• 领导者的角色是10种角色中最显著的一种角色，也是管理者权力最明显的表现。", "id": "n_68", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_67", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "三大类10种角色明细：人际角色（3种）→ 信息角色（3种）→ 决策角色（4种）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 逻辑起点：正式权力和地位 → 人际角色（代表人、领导者、联络者） → 信息角色（监督人、传播者、发言人） → 决策角色（企业家、冲突管理者、资源分配者、谈判者）。\n• ● 人际角色：人际角色归因于管理者的正式权力。管理者所扮演的三种人际角色是代表人角色、领导者角色和联络者角色。\n• ● 信息角色：在信息角色中，管理者负责确保和其一起工作的人具有足够的信息。管理职责的性质决定了管理者既是所在单位的信息传递中心，也是别的单位的信息传递渠道。\n• ● 决策角色：在决策角色中，管理者处理信息并得出结论。如果信息不用于决策，就会丧失其应有的价值。管理者负责做出决策，并分配资源以保证决策方案的实施。", "id": "n_70", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_69", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_66", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理者的三大技能及其在不同管理层次的比例（补充内容）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "framework", "title": "三大技能内涵：技术技能、人际技能、概念技能", "star": true, "children": [{"type": "verbatim", "title": "• 技术技能：运用专业工具与专业技术的能力；掌握专业知识的能力；分析解决专业问题的能力；——技术技能是指管理者掌握和熟悉特定专业领域中的过程、惯例、技术和工具的能力。\n• 人际技能：取得他人支持的能力；激励他人努力工作的努力；妥善处理人际关系的能力；——人际技能是指成功地与别人打交道并与别人沟通的能力。\n• 概念技能：总揽全局的能力；识别关键因素的能力；理解事物之间相互关系的能力；——概念技能是指产生新想法并加以处理，以及将关系抽象化的思维能力。", "id": "n_73", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_72", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "各层次管理所需技能比例：高层重概念、基层重技术、人际技能各层均重要", "tag": "辨析", "star": true, "children": [{"type": "verbatim", "title": "• 高层管理：概念技能占比最大，人际技能次之，技术技能占比最小。\n• 中层管理：概念技能、技术技能、人际技能比例相对均衡。\n• 基层管理：技术技能占比最大，人际技能次之，概念技能占比最小。（人际技能在高、中、基层管理中所占比例均重要且相当）", "id": "n_75", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_74", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_71", "depth": 3, "theme": "teal", "hasStarBranch": true}], "depth": 2, "theme": "teal", "hasStarBranch": true}, {"id": "ch1_s6", "type": "section", "title": "1.6 基本原理、方法、工具、时代背景与学科思维", "star": true, "children": [{"type": "framework", "title": "管理的基本原理：人本、系统、效益、适度", "tag": "要点", "page": "P31", "star": true, "children": [{"type": "framework", "title": "总述与首要原理——人本原理（依靠人的管理 + 为了人的管理）", "star": true, "children": [{"type": "verbatim", "title": "• 在组织和协调群体活动的过程中，管理者必须依循人本、系统、效益及适度等基本原理，利用理性分析和直觉判断等基本方法，借助权力和文化等基本工具。\n• 人是组织的中心，也是管理的中心，人本原理当是管理的首要原理。\n• 以人为中心的人本原理要求对组织活动的管理既是“依靠人的管理”，也是“为了人的管理”。\n• 依靠人的管理：组织被管理者参与管理；重视管理的人性化。\n• 为了人的管理：管理的目的使组织能够更好地满足服务对象的要求；全体组织成员共享由于管理而促进的组织成果的改善。", "id": "n_79", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_78", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "系统原理：系统的定义、三标准六类型、四大特征与三点管理要求", "page": "P31", "star": true, "children": [{"type": "verbatim", "title": "• 系统是指由若干相互依存、相互作用的要素或子系统组合而成的具有特定功能的有机整体。根据不同的标准，系统可以分成不同类型：\n  - 按系统形成方式：自然系统（由自然物质组成的系统） / 人造系统（人为了实现某种目的而有意识建立的系统）\n  - 按系统是否与环境交互作用：封闭系统（不与外界进行物质、信息、能量交换的系统） / 开放系统（在存在与运行过程中不断地与外界发生交互作用）\n  - 按系统状态是否发生变化：静态系统（结构和状态不随时间而改变） / 动态系统（结构和状态随时间而改变）\n• 人造、开放、动态的社会经济组织系统虽然存在多种形式，但一般来说具有以下共同特征：整体性、相关性、有序性、与外部环境的互动性。\n• 根据系统论的观点，我们在组织管理活动时应注意以下几个方面：1. 管理活动所要处理的每一个问题都是系统中的问题。2. 管理必须有层次观点。3. 管理工作必须有开发观点。", "id": "n_81", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_80", "depth": 4, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "效益原理与适度原则（两极端间寻找最恰当的点）", "children": [{"type": "verbatim", "title": "• 效益原理：做正确的事情 + 正确地做事情 → 也就是：既要讲效率，又要讲效果\n• 适度原则：管理活动中存在许多相互矛盾的选择，必须在两个极端之间找到最恰当的点，进行适度管理，实现适度组合。（矛盾对偶：专业化 ↔ 多样化；分权 ↔ 集权；扁平化 ↔ 层级制）", "id": "n_83", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_82", "depth": 4, "theme": "teal", "hasStarBranch": false}], "id": "n_77", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的基本方法与基本工具（权力、组织文化）", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "管理的基本方法：四维分类体系 & 理性分析 + 直觉判断", "children": [{"type": "verbatim", "title": "• 管理方法多种多样：\n  - 按管理对象：与人有关的方法、与物有关的方法、与资金管理有关的方法、与活动组织有关的方法\n  - 按活动选择和实施阶段：方案制定方法、方案比较方法、方案实施方法、过程控制方法\n  - 按管理的层次：宏观管理方法、中观管理方法、微观管理方法\n  - 按属性：法律方法、行政方法、经济方法、教育方法\n• 抽象地看，这些方法或者以理性分析为基础，或者以直觉判断为依据。理性分析 + 直觉判断 = 管理的基本方法", "id": "n_86", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_85", "depth": 4, "theme": "teal", "hasStarBranch": false}, {"type": "framework", "title": "管理的基本工具：权力（直接规范追踪控制）与组织文化（低成本无意识引导）", "tag": "辨析", "star": true, "children": [{"type": "verbatim", "title": "• 如果说管理的本质是规范和协调人的行为，那么管理者影响人的行为的手段无非两类：一类与权力有关，另一类与组织文化有关。管理者既需要运用权力直接规范被管理者在组织中必须表现的行为，并对其进行追踪和控制，也需要借助组织文化引导组织成员在参与组织活动过程中不同时空的行为选择。\n• 权力：权力本是政治学研究的一个基本概念，它描述的是组织中的相关个体在一定时期内相对稳定的一种关系。把权力的实质理解为命令与服从，则权力关系是单向的。把权力的实质理解为影响力，则权力关系必然是双向的。不完全平等的权力地位是权力关系的基本特征。权力关系中相对权力地位或相对影响力不一样的原因是行为主体拥有的权力资源不同：专门知识或技能；经验和能力；个人品质；奖励或惩罚他人的可能性。\n• 组织文化：组织文化的核心是组织成员普遍认同、共同接受的价值观念以及由这种价值观念所决定的行为准则。组织文化一旦形成，对组织成员的行为影响就会是持续的、普遍的，而且是低成本的。作为一种低成本的管理工具，文化的发挥作用是无意识的。", "id": "n_88", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_87", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_84", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理的三大时代背景（全球化、信息化、市场化）", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "全球化（跨文化互动）、信息化（ERP/CRM/SCM等）、市场化（现代企业制度五特征）", "star": true, "children": [{"type": "verbatim", "title": "• 管理活动与时代背景密切相关，是一个历史范畴，既反映时代背景，又是一定时代背景下的产物。全球化和信息化是当今世界的两大重要特征。作为新兴的经济大国，中国20世纪70年代末开始改革开放，引入市场机制，市场化因此逐渐成为中国经济生活的主旋律.\n• 全球化：“全球化管理者主要关心的是在不同文化之间的人员和思想的互动，而不是关注于在管理者的祖国中原来的特定领导方式的效果和对来自不同国家或地区的管理者的管理方式的比较。”——南希·阿德勒\n• 信息化：企业信息化管理：企业资源计划（ERP）、客户关系管理（CRM）、供应链管理（SCM）、办公自动化系统（OAS）、云平台、大数据……\n• 市场化（现代企业制度）：产权关系明晰；企业以其全部法人财产依法自主经营，自负盈亏；出资者按投入企业的资本额享有所有者的权益；企业按照市场需求组织生产经营；建立科学的企业领导体制和组织管理制度。", "id": "n_91", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_90", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_89", "depth": 3, "theme": "teal", "hasStarBranch": true}, {"type": "framework", "title": "管理学的学科地位、研究对象与五大科学思维", "tag": "要点", "page": "P12-14", "star": true, "children": [{"type": "framework", "title": "《管理学》中心议题、研究对象与学科地位体系", "children": [{"type": "verbatim", "title": "• 《管理学》的中心议题：管理者如何有效管理其组织——让一群平凡的人创造出不平凡的组织业绩\n• 管理学一门研究管理活动中基本管理关系、管理规律及一般方法的科学。研究在现有的条件下，如何通过合理的组织和配置人、财、物等因素，提高生产力的水平。管理学是一门综合性的交叉学科。\n• 管理学在学科中的地位：微观（单个组织或活动：工业企业管理学 / 社团管理学）；中观（一类组织或活动：工业经济管理学 / 行业管理学）；宏观（一群组织或活动：国民经济管理学 / 非盈利性组织管理学）；基础（所有组织或活动：管理学）。\n• 管理学学科体系五大门类：管理科学与工程、工商管理（会计学、企业管理［财务管理、市场营销、人力资源管理］、旅游管理、技术经济及管理）、农林经济管理、公共管理、图书情报与档案管理。", "id": "n_94", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_93", "depth": 4, "theme": "teal", "hasStarBranch": false}, {"type": "framework", "title": "学习和研究管理学的五大科学思维：战略、历史、辩证、创新、底线思维", "page": "P12-14", "star": true, "children": [{"type": "verbatim", "title": "• 战略思维：高瞻远瞩，统揽全局\n• 历史思维：以史为鉴、知古鉴今 善于运用历史，认识发展规律\n• 辩证思维：看到矛盾，了解矛盾，抓住重点，洞察规律\n• 创新思维：因时制宜，知难而退，敢为人先\n• 底线思维：要有道德法律底线 在目标难以实现时，能够事先做好调整", "id": "n_96", "depth": 5, "theme": "teal", "hasStarBranch": false}], "id": "n_95", "depth": 4, "theme": "teal", "hasStarBranch": true}], "id": "n_92", "depth": 3, "theme": "teal", "hasStarBranch": true}], "depth": 2, "theme": "teal", "hasStarBranch": true}], "depth": 1, "hasStarBranch": true}, {"id": "ch2", "type": "chapter", "theme": "indigo", "title": "第二章 管理理论的历史演变", "badge": "思想篇", "star": true, "children": [{"id": "ch2_s1", "type": "section", "title": "2.1 中西方早期管理实践与思想", "star": false, "children": [{"type": "framework", "title": "西方工厂制度早期的管理实践评价与三大特点", "tag": "要点", "children": [{"type": "framework", "title": "实践凭个人经验、理论零星未成体系，呈现三大特点", "children": [{"type": "verbatim", "title": "• （1）在管理实践上，资本家及其代理人凭个人经验进行管理，工人也是凭自己的经验进行操作，缺乏统一的操作规程和严格的管理制度。\n• （2）在管理理论上，只有一些零星的研究，还没有形成系统的管理理论。处于管理理论发展的初级阶段。在此时期，管理工作呈现几个特点：\n   企业的管理者直接由资本家直接担任企业管理者；\n   管理的方法是靠个人的经验从事生产和管理。\n   管理的重点是解决分工与协作问题。", "id": "n_101", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_100", "depth": 4, "theme": "indigo", "hasStarBranch": false}], "id": "n_99", "depth": 3, "theme": "indigo", "hasStarBranch": false}, {"type": "framework", "title": "中国早期管理思想的背景与传统管理九大要点", "tag": "要点", "children": [{"type": "framework", "title": "儒道法佛文化背景与九大要点（顺“道”、法治、节俭、对策、求实、利器、守信、人和、重人）", "children": [{"type": "verbatim", "title": "• 中国早期管理思想形成的社会文化背景：上下五千年的文明史：封建社会制度——半封建半殖民地社会的影响（儒家思想：三纲五常、仁义礼智信；道家；法家；佛家）\n• 中国传统管理的要点：顺“道”、法治、节俭、对策、求实、利器、守信、人和、重人\n• 典型思想名句：得道者多助，失道者寡助；“天时、地利、人和”；求同存异，舍利取义；运筹帷幄，决胜千里之外；君子信而后劳其民；静以修身，俭以养德", "id": "n_104", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_103", "depth": 4, "theme": "indigo", "hasStarBranch": false}], "id": "n_102", "depth": 3, "theme": "indigo", "hasStarBranch": false}], "depth": 2, "theme": "indigo", "hasStarBranch": false}, {"id": "ch2_s2", "type": "section", "title": "2.2 古典管理理论（泰勒、法约尔、韦伯）", "star": true, "children": [{"type": "framework", "title": "泰勒：科学管理理论（“科学管理之父” / 《科学管理原理》）", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "framework", "title": "泰勒制定义与核心理念：管理走向科学 + 劳资双方的心理革命", "star": true, "children": [{"type": "verbatim", "title": "• “科学管理”也被称为泰勒制（Taylorism）是由美国管理学家泰勒提出的一种管理思想的理论。它包括了一系列关于生产组织合理化和生产作业标准化的科学方法及理论依据。\n• 管理要走向科学：科学管理的根本目的是谋求最高效率，这就要求用科学化的、标准化的管理方法代替经验管理。为此，泰勒提出科学管理的四项原则和一些管理制度（时间研究、动作研究、程序化、计件制、例外管理、标准化、管理职业化）\n• 劳资双方的心理革命：许多人认为雇主和雇员的根本利益是对立的，而泰勒认为双方的利益是一致的。只有雇主和雇员双方互相协作，才会达到较高的绩效水平。", "id": "n_108", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_107", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "劳动生产率低下的三大原因及对应改进对策", "star": true, "children": [{"type": "verbatim", "title": "• 泰勒认为，当时企业的劳动生产率普遍低下，工人每天的实际产量只为他们劳动能力的1/3，而造成这种状况的原因主要有三个方面。要提高劳动生产率，增加企业盈利，必须从三个方面做文章。\n  1. 劳动使用不当，包括工作分配不合理和劳动方法不正确 → ✓ 改进工作方法，并根据工作的要求挑选和培训工人\n  2. 由于薪酬和工人本性等原因，工人不愿干或不愿多干 → ✓ 改进分配方法，实行差别计件工资制\n  3. 企业生产组织与管理的原因 → ✓ 改进生产组织，加强企业管理", "id": "n_110", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_109", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "泰勒的四项科学管理原则（与传统做法一一对比）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 传统的做法：工人们按各自的经验来开展工作 ↔ 科学管理的原则：① 提出工人操作的每一动作的科学方法，以代替过去单凭经验从事的方法。\n• 传统的做法：由工人选择各自的工作，并各尽所能地进行自我培训。 ↔ 科学管理的原则：② 科学地挑选工人，并进行培训和教育，使之成长成才。③ 与工人密切合作，以确保所有工作都按照所制定的科学原则行事。\n• 传统的做法：几乎所有的工作和大部分责任都由工人们承担 ↔ 科学管理的原则：④ 管理者和工人的工作和职责几乎是均分的。管理者应该承担起那些自身比工人更胜任的工作", "id": "n_112", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_111", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "科学管理的五大主要内容：工作定额、标准化、能力与工作相适应、差别计件工资制、计划与执行分离", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 1. 工作定额原理：（1）寻找和确定科学的工作方法（时间研究，动作研究）（2）以科学工作方法为准，确定合理的工作定额。\n• 2. 标准化原理：每位工人在工作时都要采用标准的方法，而且工人所使用的工具、机器、材料和所在工作现场环境等等都应该标准化，以利于提高劳动生产率。\n• 3. 能力与工作相适应原理：根据岗位选第一流的工人，以确保较高的工作效率。第一流的工人：能力与意愿\n• 4. 差别计件工资制：在科学地制定劳动定额的前提下，采用差别计件工资制来鼓励工人完成或超额完成定额。\n• 5. 计划职能与执行职能相分离：由计划部门专门拟定计划、选用标准化工具，进行时间、动作研究；由所有的工人和部分工长承担执行职能", "id": "n_114", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_113", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "科学管理学派其他代表：吉尔布雷斯夫妇（动作研究）、甘特（甘特图/计件奖励制）", "children": [{"type": "verbatim", "title": "• 泰罗的贡献：“科学管理之父”、科学管理理论\n• 吉尔布雷斯夫妇：动作研究、工作简化\n• 甘特：“甘特图”、计件奖励工资制", "id": "n_116", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_115", "depth": 4, "theme": "indigo", "hasStarBranch": false}], "id": "n_106", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "法约尔：一般管理理论（“现代管理之父” / 《工业管理与一般管理》）", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "framework", "title": "历史地位与三大卓越贡献（普遍性原则、管理职能论、开设管理课程思想）", "star": true, "children": [{"type": "verbatim", "title": "• 法约尔的一般管理理论是西方古典管理思想的重要代表，后来成为管理过程学派的理论基础，也是以后各种管理理论和管理实践的重要依据，对管理理论的发展和企业管理的历程均有着深刻的影响。\n• 法约尔的卓越贡献在于对管理发展有重大影响的3项革命性内容：第一，提出了管理的普遍性原则。第二，提出了适合于人类的一切组织的管理职能论，它不仅适合于公私企业，也适用于军政机关和宗教组织等。第三，在学院和大学开设管理课程的思想\n• 教育的必要性：管理能力可以通过教育来获得，缺少管理教育是由于没有管理理论，每一个管理者都按照他自己的方法、原则和个人的经验行事，但是谁也不曾设法使那些被人们接受的规则和经验变成普遍的管理理论。", "id": "n_119", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_118", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "区别经营与管理：经营六大职能（管理只是经营的第六项职能）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 法约尔认为，经营和管理是两个不同的概念，管理只是经营的一部分。法约尔通过对企业全部活动的分析，将管理活动从经营职能（包括技术、商业、财务、安全和会计等五大经营职能）中提炼出来，成为经营的第六项职能。\n  - 技术职能：企业加工材料、生产产品的制造活动\n  - 商业职能：与原材料和设备的购买和产品的销售有关的市场活动\n  - 财务职能：围绕资金的筹集和运用而展开的活动\n  - 安全职能：与设备和人员保护有关的活动\n  - 会计职能：为监视资金的合理运用而对其运动过程中的变化状况进行的记录、归类和分析活动\n  - 管理职能：由计划、组织、指挥、协调、控制等一系列工作构成", "id": "n_121", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_120", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "法约尔的十四项管理原则（任何组织活动都存在共同的管理问题）", "tag": "要点", "star": true, "children": [{"type": "verbatim", "title": "1.劳动分工；2.权力和责任；3.纪律；4.统一指挥；5.统一领导；6.个人利益服从整体利益；7.人员的报酬；8.集中；9.等级制度；10.秩序；11.公平；12.人员稳定；13.首创精神；14.人员的团结", "id": "n_123", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_122", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_117", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "韦伯：官僚组织结构/科层制理论（“组织理论之父” / 《社会和经济组织的理论》）", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "framework", "title": "科层组织（官僚组织）的定义与三条建立运行规则", "tag": "定义", "star": true, "children": [{"type": "verbatim", "title": "• 马克斯·韦伯被尊称为“组织理论之父”。主要贡献是提出了“官僚组织结构理论”，或称“理想的行政组织体系理论”，集中反映在代表作《社会和经济组织的理论》一书中。\n• 科层组织或科层制度，通常亦被译为官僚组织、官僚政治，是一种通过公职或职位，而不是通过世袭或个人魅力来进行管理的理想的组织制度。\n• 科层组织是依照下述规则来建立和组织运行的：• 作为正式职责分配日常活动；• 授权，并且由官员能加以控制的某种强制手段来严格地加以限制；• 对于正常而继续地履行职责来行使相应的权力的方法有所规定：只有按一般规定符合条件的人才被雇用。", "id": "n_126", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_125", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "韦伯式官僚制（科层制）的六大主要特征", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 1. 劳动分工  工作应当分解成为若干简单、常规性的和明确定义的任务。\n• 2. 职权层级  职务和职位应当依层级来组织。每个下级应当接受上级的控制和监督。\n• 3. 正式选拔  所有的组织成员都要依据经过培训、教育，或正规考试取得的技术资格进行选拔。\n• 4. 正式规章制度  为了确保一贯性并规范全体雇员的活动，管理者必须倚重正式的组织规则。\n• 5. 非人性化  规则和控制的实施具有统一性，避免搀杂个人感情以及受到个人偏好的影响。\n• 6. 职业导向  管理者是专职人员而不是他所管辖单位的所有者，他们领取固定的工资并寻求自身在组织中的职业发展。", "id": "n_128", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_127", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "三种合法权力类型：传统型、个人魅力型、法理型（科层组织唯一基础）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 韦伯认为，为社会所接受的合法的权力有三种类型：\n  1. 传统型权力：建立在对于习惯和古老传统的神圣不可侵犯性要求之上。这是一种由族长或部落首领来行使的权力。\n  2. 个人魅力型权力：是建立在对某个英雄人物或某个具有神赋天授品质的人的个人崇拜基础之上的权力。个人魅力型的权力不能作为政治统治的稳固制度的基础。\n  3. 法理型权力：这是一种对由法律确定的职位或地位的权力的服从。韦伯认为，只有法理型权力才能成为科层组织的基础", "id": "n_130", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_129", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_124", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "古典（科学）管理思想总体特点与三大理论异同对比", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "framework", "title": "总体三大特点：提高效率、用科学代替经验、管理专业化与职业化", "star": true, "children": [{"type": "verbatim", "title": "• 1. 研究重点：如何提高效率：- 泰勒注重于工人劳动效率和管理人员工作效率的提高——标准化和例外管理等。- 法约尔着眼于管理效率的提高——管理的五大职能和管理十四条原则。- 韦伯注重组织整体效率提高——官僚组织\n• 2. 主张用科学代替经验：- 形成了一系列的科学管理原理和方法。- 提出了一般管理理论和基本管理原则。- 提出了从技术上而言效率最高的组织结构形式。\n• 3. 管理专业化、职业化：- 主张管理者和操作者的分离。- 主张进行专门的管理专业教育。- 主张管理工作应该职业化。", "id": "n_133", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_132", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "三个古典管理理论异同：同为“经济人假设+效率最大化”；异在个体/企业组织/社会组织效率", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 共同点：均属古典管理思想 → 均基于“经济人假设” → 共同追求“效率最大化目标”。\n• 不同点：泰勒（科学管理 → 个体效率）；法约尔（组织管理 → 企业组织效率）；韦伯（科层制 → 社会组织效率）。", "id": "n_135", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_134", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_131", "depth": 3, "theme": "indigo", "hasStarBranch": true}], "depth": 2, "theme": "indigo", "hasStarBranch": true}, {"id": "ch2_s3", "type": "section", "title": "2.3 行为科学理论与人性假设", "star": true, "children": [{"type": "framework", "title": "梅奥：霍桑实验与人际关系学说（行为科学创始人）", "tag": "要点", "page": "P222", "examMust": true, "star": true, "children": [{"type": "framework", "title": "霍桑实验三大核心结论：“社会人”、非正式组织、工人满意度居首", "page": "P222", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 主要著作：《工业文明中人的问题》、《工业文明的社会问题》（见教材P222）\n• 1. “人不是单纯的‘经济人’和‘生物人’，而人更主要的是‘社会人’”。个人的态度对行为方式起着特殊的决定性作用。\n• 2. 企业中除了存在正式组织之外，还存在着非正式组织。这种非正式组织的作用在于维护其成员的共同利益，使之免受其内部个别成员的疏忽或外部人员的干涉所造成的损失。\n• 3. 在决定劳动生产率的诸因素中，置于首位的因素是工人的满意度，生产条件、工资报酬只是第二位的。“管理者应该以激励人的行为、调动人的积极性为根本，组织员工主动、积极、创造性地完成自己的任务，实现组织的高效益。”", "id": "n_139", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_138", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "社会人假设（霍桑实验的结果）：基本观点与四条具体表现", "star": true, "children": [{"type": "verbatim", "title": "• 基本观点：人不仅具有经济性的需求更具有社会性的需求，因此人与人之间的关系和组织的归属感比经济报酬更能激励人的行为。\n• 具体表现：① 劳动者是由社会需求而引起工作的动机，并且通过与同事的关系而获得认同感。② 劳动者只能从工作上的社会关系寻求工作的意义。③ 劳动者对同事们的社会影响力，比对管理者所给予的经济诱因控制更为重视。④ 劳动者的工作效率随着上司能满足他们社会需求的程度而改变。", "id": "n_141", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_140", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_137", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "人性假设演进与麦格雷戈“X理论—Y理论”、沙因复杂人（超Y理论）", "tag": "辨析", "page": "P221", "examMust": true, "star": true, "children": [{"type": "framework", "title": "人性假设演进脉络与麦格雷戈《企业的人性方面》（X理论 vs Y理论）", "page": "P221", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 人性的假设：传统模式→人际关系模式→人力资源模式（见教材P221）\n• 1948～1954年，麦格雷戈对当时流行的传统的管理观点和对人的特性的看法提出了疑问。其后，他在1960年11月发表了《企业的人性方面》(The Human Side of Enterprise)一文，提出了“X理论—Y理论”。\n• 麦格雷戈把传统的管理观点叫做X理论。X模式假定人性丑恶，人们基本上厌恶工作，对工作没有热诚，如非必要就会加以逃避。人类只喜欢享乐，凡事得过且过，尽量逃避责任。\n• Y理论假定人性本善，认为一般人在本质上并不厌恶工作，只要循循善诱，雇员便会热诚工作，在没有严密的监管下，也会努力完成生产任务。而且在适当的条件下，一般的人不仅愿意承担责任而且会主动寻求责任感。", "id": "n_144", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_143", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "经济人假设（X理论）的四大特点", "star": true, "children": [{"type": "verbatim", "title": "• 人是以追求个人利益最大化为目的并积极从事经济活动的主体，具有四个特点：\n  1. 人必然是自利的，且不是孤立的。\n  2. 人总是凭借所处环境判断自身的利益，努力使用各种手段，追求自身利益的最大化。\n  3. 人唯一目的是追求私人的利益，但最终会增加社会的公共利益。但是，这一过程需要有良好健全的法制和规则作为保证。\n  4. 人追逐私利的手段和内容会随着社会发展而发生变化，但其自利的本性不变。\n• 麦格雷戈提出的X理论对经济人假设做出了更详细的解释。", "id": "n_146", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_145", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "自我实现人假设（马斯洛）与Y理论六大要点", "star": true, "children": [{"type": "verbatim", "title": "• 观点：人类需要的最高层次是自我实现——马斯洛；麦格雷戈在自我实现人假设的基础上提出了Y理论。\n  1. 大多数人都是勤奋的，只要环境允许，人是乐于工作的；\n  2. 人在执行任务的过程中能够自我指导和自我控制；\n  3. 在正常情况下，大多数人不仅会接受任务，而且还会主动寻求责任，逃避责任、缺乏抱负以及强调安全感通常是经验的结果，而不是人的本性；\n  4. 大多数人都具有相当程度的想象力、智谋和创造力，在不为外界因素所指使和控制的情况下，可以得到正常发挥；\n  5. 人体之中蕴藏着极大的潜力，但在现代工业条件下，一般人只能发挥少部分潜力；\n  6. 员工个人自我实现倾向与组织所要求的行为之间并无冲突。", "id": "n_148", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_147", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "复杂人假设（沙因）与超Y理论（莫尔斯和洛什）：四大应变要点", "tag": "辨析", "star": true, "children": [{"type": "verbatim", "title": "• 观点（沙因）：人既不是单纯的经济人，也不是完全的社会人，更不是纯粹的自我实现人，而是复杂人。\n• 美国管理心理学家莫尔斯和洛什提出了超Y理论。\n• 四大要点：主体需要的差异性；组织方式的相异性；控制程度的应变性；目标确立的递进性。", "id": "n_150", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_149", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_142", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "行为管理思想的总体特点", "tag": "要点", "children": [{"type": "framework", "title": "把人看作宝贵资源，从需求/动机/人际关系研究激励与效率", "children": [{"type": "verbatim", "title": "• 行为管理思想的特点在于改变了人们对管理的思考方法，它把人看作是宝贵的资源。\n• 强调从人的作用、需求、动机、相互关系和社会环境等方面研究其对管理活动及其结果的影响\n• 研究如何处理好人与人之间的关系、做好人的工作、协调人的目标、激励人的主动性和积极性，以提高工作效率。", "id": "n_153", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_152", "depth": 4, "theme": "indigo", "hasStarBranch": false}], "id": "n_151", "depth": 3, "theme": "indigo", "hasStarBranch": false}], "depth": 2, "theme": "indigo", "hasStarBranch": true}, {"id": "ch2_s4", "type": "section", "title": "2.4 现代管理理论主要流派", "star": true, "children": [{"type": "framework", "title": "巴纳德：组织社会系统理论（社会系统学派创始人）", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "framework", "title": "《经理人员的职能》：协作系统定义、三大基本要素与经理人员三职能", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 巴纳德认为，应该把企业组织及其成员的相互关系看成一种协作的社会系统。巴纳德被后人称为社会系统学派的创始人。在1938年出版的《经理人员的职能》这本书中，巴纳德研究了系统的特征及构成要素，并分析了经理人员的任务和作用。（为“社会系统学派”奠定了理论基础）\n• 组织是一个协作系统：组织是两个或两个以上的人有意识协调活动和效力的系统。\n• 协作系统的三个基本要素：（1）协作的意愿。（2）共同的目标。（3）信息的沟通\n• 经理人员的职能：（1）建立和维持一个信息系统。（2）从不同的组织成员那里获得必要的服务。（3）规定组织的共同目标，并用各个部门的具体目标加以阐明", "id": "n_157", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_156", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_155", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "菲德勒：权变管理理论学派（管理取决于组织环境情境）", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "代表作《领导与有效管理》与权变理论两大要点", "star": true, "children": [{"type": "verbatim", "title": "• 代表人物：菲德勒  代表作《领导与有效管理》\n• 权变理论要点：\n  （1）现实中不存在一成不变、普遍适用的理想化管理理论和方法，管理应随机应变，即采用什么样的管理理论、方法及技术应取决于组织环境；\n  （2）管理学者的任务，就在于归纳出管理中的情境究竟是由哪些因素组成，它们又有多少种存在状态，又有多少种不同管理方法；", "id": "n_160", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_159", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_158", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "西蒙与明茨伯格：管理本质的决策与协调研究", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "framework", "title": "西蒙决策研究：管理的本质是决策；决策准则是“令人满意”而非“最优”", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 美国学者西蒙认为，管理的本质是决策，所有管理工作都是围绕着决策的制定和组织实施来进行的。\n• 1、管理就是决策，决策贯穿于整个管理过程：西蒙等人认为，决策是组织及其活动的基础。组织是作为决策者的个人所组成的系统。\n• 2、决策的准则：西蒙认为，由于决策者在认识能力上和时间、经费及情报来源上的限制，不可能具备这些前提，不可能做出“完全合理”或“最优”的决策，只能做出“足够好的”或“令人满意的”决策。", "id": "n_163", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_162", "depth": 4, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "明茨伯格协调研究：组织六种基本协调机制、六个基本部分与七种组织形态", "star": true, "children": [{"type": "verbatim", "title": "• 明茨伯格认为，组织管理的基本问题是分工和协调，组织结构的实质是人们在组织内进行劳动分工和协调的方式的总和。\n• 不论企业采用的具体协调方法有多少种，都可以归纳为六种基本的机制。这六种协调机制在时间上相继出现，在空间上也可能同时并存：相互调适 → 直接监督 → 工作程序标准化 → 成果标准化或产出标准化 → 技术（技能）以及知识标准化 → 规范标准化。\n• 组织的六个基本部分：战略高层、直线中层、工作核心层、技术官僚、支援幕僚、意识形态/文化。\n• 七种组织类型：创业型组织、机械化组织、多角化组织、专业型组织、创新型组织、使命型组织、政治型组织。", "id": "n_165", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_164", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_161", "depth": 3, "theme": "indigo", "hasStarBranch": true}, {"type": "framework", "title": "管理科学学派（数量学派 / 运筹学派）", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "核心定义、四大研究假设前提与解决管理问题的七步循环程序", "star": true, "children": [{"type": "verbatim", "title": "• 在管理科学学派看来，管理就是制定和运用数学模型与程序的系统，即通过对企业的生产、采购、人事、财务、库存等职能间相互关系的分析，然后用数学符号和公式来表示计划、组织、控制等合乎逻辑的程序，求出最优的解答，以达到企业的目标。它主要与将定量方法运用于管理活动的研究有关，所以通常也被称为管理的数量学派或运筹学派。\n• 管理科学在研究组织活动的管理时是以下述假设为前提的：（1）组织成员是经济人；（2）组织是一个追求经济效益的系统；（3）组织是由作为操作者的人同物质技术设备所组成的人机系统；（4）组织是一个决策网络。\n• 在组织的管理过程中应该发展许多数量分析方法和决策技术，在利用这些方法和模型解决管理问题时，要依循以下程序：观察和分析 → 确定问题本质 → 建立数学模型 → 找出最优解 → 验证最优解 → 建立控制 → 实践方案。", "id": "n_168", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_167", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_166", "depth": 3, "theme": "indigo", "hasStarBranch": true}], "depth": 2, "theme": "indigo", "hasStarBranch": true}, {"id": "ch2_s5", "type": "section", "title": "2.5 西方管理思想发展脉络总览", "star": true, "children": [{"type": "framework", "title": "围绕中心议题“管理者如何有效管理其组织”的五阶段演进焦点", "tag": "辨析", "star": true, "children": [{"type": "framework", "title": "经验管理（实践经验）→ 科学管理（科学方法）→ 行为管理（人的重要性）→ 定量管理（数量化）→ 权变管理（环境因素）", "star": true, "children": [{"type": "verbatim", "title": "• 中心议题：管理者如何有效管理其组织\n• 西方管理思想发展五阶段：\n  1. 经验管理思想 —— 实践经验\n  2. 科学管理思想 —— 科学方法\n  3. 行为管理思想 —— 人的重要性\n  4. 定量管理思想 —— 数量化\n  5. 权变管理思想 —— 环境因素", "id": "n_172", "depth": 5, "theme": "indigo", "hasStarBranch": false}], "id": "n_171", "depth": 4, "theme": "indigo", "hasStarBranch": true}], "id": "n_170", "depth": 3, "theme": "indigo", "hasStarBranch": true}], "depth": 2, "theme": "indigo", "hasStarBranch": true}], "depth": 1, "hasStarBranch": true}, {"id": "ch4", "type": "chapter", "theme": "violet", "title": "第四章 环境分析与决策（含竞争战略）", "badge": "环境与战略", "star": true, "children": [{"id": "ch4_s1", "type": "section", "title": "4.1 组织环境的概述与构成分类", "star": true, "children": [{"type": "framework", "title": "组织环境的概念与内外部基本分类", "tag": "定义", "star": true, "children": [{"type": "framework", "title": "组织环境定义及外部环境 / 内部环境（物质环境、文化环境）", "star": true, "children": [{"type": "verbatim", "title": "• 组织环境的概念：是指存在于一个组织内部和外部的影响组织业绩的各种力量和条件因素的总和。（一个组织的绩效，受制于存在于组织内外部的各种条件因素的影响。）\n• 组织环境的分类：\n  - 外部环境\n  - 内部环境：物质环境（组织内部的资源拥有情况和利用情况。）；文化环境（组织及其成员的行为方式及这种方式所反映的被组织成员共同接受的信仰、价值观念及行为准则。）", "id": "n_177", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_176", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_175", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "组织环境的三层构成与“直接 vs 间接”影响划分", "tag": "辨析", "page": "P94", "examMust": true, "star": true, "children": [{"type": "framework", "title": "同心圆三层结构：一般环境（宏观）→ 任务环境（微观）→ 内部环境", "page": "P94", "star": true, "children": [{"type": "verbatim", "title": "• 一般环境（宏观环境）：自然环境、政治环境、社会文化力量、技术环境、经济环境。\n• 任务环境（微观环境）：供应商、顾客、现有竞争者、潜在进入者、替代品厂商。\n• 内部环境（组织）：物质资源、组织文化。", "id": "n_180", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_179", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "对组织业绩的直接/间接影响辨析：外部（一般=间接 / 任务=直接）；内部（文化=间接 / 经营条件=直接）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 某一组织管理环境因素（存在于组织内部OR外部？）：\n  - 外部 → 外部环境因素（对组织业绩的影响）：\n    · 间接 → 一般环境因素：政治、经济、社会、技术\n    · 直接 → 任务环境因素：供应商、顾客、竞争对手、主管部门、相关利益群体\n  - 内部 → 内部环境因素（对组织业绩的影响）：\n    · 间接 → 组织文化因素：核心价值观、目标定位、经营管理理念、行为规范\n    · 直接 → 经营条件因素：人力资源、资金、品牌等资源、能力、知识", "id": "n_182", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_181", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_178", "depth": 3, "theme": "violet", "hasStarBranch": true}], "depth": 2, "theme": "violet", "hasStarBranch": true}, {"id": "ch4_s2", "type": "section", "title": "4.2 一般（宏观）环境与PEST分析法", "star": true, "children": [{"type": "framework", "title": "外部环境的PEST分析法四大维度", "tag": "定义", "examMust": true, "star": true, "children": [{"type": "framework", "title": "P（政治与法律）、E（经济）、S（社会和文化）、T（技术）", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 1、政治与法律环境（Political environment）\n• 2、经济环境（Economic environment）\n• 3、社会和文化环境（Social environment）\n• 4、技术环境（Technological environment）", "id": "n_186", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_185", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_184", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "P — 政治环境因素及其对组织业绩的作用机制", "tag": "要点", "children": [{"type": "framework", "title": "政治体制（路线方针）与政治形势（力量对比）→ 政府态度与政局稳定性 → 组织业绩", "children": [{"type": "verbatim", "title": "• 政治体制（执政党的路线方针） + 政治形势（政治力量的对比） → 某一国家或地区的政治环境：\n  - 政府对各类组织或活动的态度 → 组织可以做什么，可做到何种程度 → 组织业绩\n  - 该地区政局的稳定性 → 风险和不确定性大小 → 组织业绩", "id": "n_189", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_188", "depth": 4, "theme": "violet", "hasStarBranch": false}], "id": "n_187", "depth": 3, "theme": "violet", "hasStarBranch": false}, {"type": "framework", "title": "E — 经济环境因素（宏观 vs 微观）及其影响路径", "tag": "辨析", "star": true, "children": [{"type": "framework", "title": "宏观经济环境（人口/国民收入/GNP等） vs 微观经济环境（消费者收入/偏好/储蓄/就业）", "tag": "辨析", "star": true, "children": [{"type": "verbatim", "title": "• 宏观经济环境：主要指一个国家的人口数量及其增长趋势，国民收入、国民生产总值及其变化情况以及通过这些指标能够反映的国民经济发展水平和发展速度。\n• 微观经济环境：主要指企业所在地区或所服务地区的消费者的收入水平、消费偏好、储蓄情况、就业程度等因素。这些因素直接决定着企业目前及未来的市场大小。", "id": "n_192", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_191", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "经济环境对组织业绩的作用路径（资源获得成本 + 需求品种数量与价格承受力）", "children": [{"type": "verbatim", "title": "• 经济制度、经济结构、物质资源状况、国民消费水平、经济发展水平 → 某一国家或地区的经济环境：\n  - 资源获得方式 + 价格水准 → 可获得的资源及其成本高低 → 组织业绩\n  - 人均可支配收入 + 需求结构 → 需求品种、数量和价格可承受力 → 组织业绩", "id": "n_194", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_193", "depth": 4, "theme": "violet", "hasStarBranch": false}], "id": "n_190", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "S — 社会文化环境因素及其对组织绩效的影响", "tag": "要点", "star": true, "children": [{"type": "framework", "title": "构成要素及文化水平、宗教信仰风俗、价值观念、审美观点四方面具体影响", "star": true, "children": [{"type": "verbatim", "title": "• 社会文化环境包括一个国家或地区的居民教育程度和文化水平、宗教信仰、风俗习惯、审美观点、价值观念等。\n• 文化水平会影响居民的需求层次；\n• 宗教信仰和风俗习惯会禁止或抵制某些活动的进行；\n• 价值观念会影响居民对组织目标、组织活动以及组织存在本身的认可与否；\n• 审美观点则会影响人们对组织活动内容、活动方式以及活动成果的态度。", "id": "n_197", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_196", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "社会对组织绩效的影响传导机制（人口结构/行为规范/生活方式 → 劳动力与商品服务需求）", "children": [{"type": "verbatim", "title": "• 风俗习惯、道德与法律、人口状况、文化教育水平 → 某一国家或地区的社会环境 → 人口结构、行为规范、生活方式 → 可获得的劳动力的数量与质量 / 所需商品和服务的数量与类型 → 组织业绩", "id": "n_199", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_198", "depth": 4, "theme": "violet", "hasStarBranch": false}], "id": "n_195", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "T — 技术环境因素与科技进步对组织绩效的影响", "tag": "要点", "children": [{"type": "framework", "title": "技术环境的定义、五个关键方面及对生产力要素与管理方式的影响", "children": [{"type": "verbatim", "title": "• 是指一个企业所在的国家或地区的技术进步情况，以及相应的技术条件、技术政策和技术发展的动向与潜力等。在知识经济的今天，企业要提高效益，寻求发展，必须要依靠技术进步。技术环境已经成为组织环境的关键因素。\n• 关键方面：技术环境；产品创新；民间和政府研发费用的流向；技术应用；新的通信和管理技术。\n• 科技进步对组织绩效的影响：产业结构、技术政策、科研潜力、技术水平、信息设施 → 某一国家或地区的科技环境 → 劳动力素质、劳动资料、劳动对象、管理方式和方法 → 组织业绩", "id": "n_202", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_201", "depth": 4, "theme": "violet", "hasStarBranch": false}], "id": "n_200", "depth": 3, "theme": "violet", "hasStarBranch": false}], "depth": 2, "theme": "violet", "hasStarBranch": true}, {"id": "ch4_s3", "type": "section", "title": "4.3 具体（微观）环境——波特五力模型", "star": true, "children": [{"type": "framework", "title": "迈克尔·波特五力模型提出背景与理论定位", "tag": "定义", "page": "P95", "examMust": true, "star": true, "children": [{"type": "framework", "title": "《竞争战略》行业结构分析模型：决定竞争规模和程度、影响产业吸引力", "page": "P95", "star": true, "children": [{"type": "verbatim", "title": "• 迈克尔·波特于80年代初提出，在其经典著作《竞争战略》中提出了行业结构分析模型\n• 行业中存在着决定竞争规模和程度的五种力量，这五种力量综合起来影响着产业的吸引力\n• 波特五力模型是企业制定竞争战略时经常利用的战略分析工具", "id": "n_206", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_205", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_204", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "波特五力模型的五种竞争力量构成", "tag": "要点", "page": "P98", "examMust": true, "star": true, "children": [{"type": "framework", "title": "现有公司间竞争、新进入者威胁、替代品威胁、供方议价能力、买方议价能力", "page": "P98", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 1. 行业竞争对手：现有公司间的竞争（Rivalry Among The Existing Player）\n• 2. 潜在进入者：新进入者的威胁（Entry of Competitors）\n• 3. 替代品：替代品的威胁（Threat of Substitutes）\n• 4. 供应商：供方议价能力（Bargaining Power of Suppliers）\n• 5. 购买者：买方议价能力（Bargaining Power of Buyers）", "id": "n_209", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_208", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_207", "depth": 3, "theme": "violet", "hasStarBranch": true}], "depth": 2, "theme": "violet", "hasStarBranch": true}, {"id": "ch4_s4", "type": "section", "title": "4.4 内外部环境综合分析法——SWOT分析", "star": true, "children": [{"type": "framework", "title": "SWOT分析的核心思想与四维矩阵结构", "tag": "定义", "page": "P99", "examMust": true, "star": true, "children": [{"type": "framework", "title": "内部环境（S优势/W劣势）+ 外部环境（O机会/T威胁）与经营目标三者动态平衡", "page": "P99", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 任何组织的经营过程，实际上是不断在其内部环境、外部环境及经营目标三者寻求动态平衡的过程。\n• SWOT ANALYSIS：\n  - Internal origin (attributes of the organization)［内部来源］：Helpful to achieving the objective → S (Strengths 优势)；Harmful to achieving the objective → W (Weaknesses 劣势)\n  - External origin (attributes of the environment)［外部来源］：Helpful to achieving the objective → O (Opportunities 机会)；Harmful to achieving the objective → T (Threats 威胁)", "id": "n_213", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_212", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_211", "depth": 3, "theme": "violet", "hasStarBranch": true}], "depth": 2, "theme": "violet", "hasStarBranch": true}, {"id": "ch4_s5", "type": "section", "title": "4.5 业务层面战略（竞争战略）【课堂标注：考试内容】", "star": true, "examMust": true, "children": [{"type": "framework", "title": "三大基本竞争战略的总体定义对比（补充内容·课堂标注必考）", "tag": "定义", "examMust": true, "star": true, "children": [{"type": "framework", "title": "低成本战略、差异化战略、集中化战略的标准含义（目标均为获得高于行业平均利润）", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 低成本战略：组织通过各种降低成本的手段，总以低于竞争对手的成本或价格的方式，提供实物产品、服务和观念，从而获得高于行业平均利润的战略。\n• 差异化战略：通过提供不同于竞争对手的某种特殊产品，或以不同的产品提供方式，或者以特殊保证产品使用价值实现方式来实现顾客价值增值，从而获得高于行业平均利润.\n• 集中化战略：专注于某一具体的区域市场、产品市场或购买群体，形成在特定领域内的独特资源和能力，从而获得高于行业平均利润的战略。", "id": "n_217", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_216", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_215", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "总成本领先战略（成本领先战略 / 课堂标注：即低成本战略，沃尔玛）", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "framework", "title": "竞争战略模型定义（大规模生产与经验曲线）及两大关键注意点（成本最低≠低档次）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 总成本领先战略:就是瞄准大规模市场的低成本竞争战略，要求积极建立大规模生产设备，通过经验曲线与严格的成本和费用控制努力需求成本缩减，在研发、服务、销售队伍、广告等方面成本最小化。（课堂笔记标注：即低成本战略，沃尔玛）\n• 成本领先战略的含义：成本领先战略就是努力使企业的某项业务成为该行业内所有竞争者中成本最低者的战略。\n• 注意：1、成本领先战略是要使本企业的某项业务成本最低，而不仅仅是努力降低成本。2、成本领先者提供的产品必须是标准的，至少不应该被顾客认为是低档次的。", "id": "n_220", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_219", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "成本领先战略的利益：对五种竞争力量的五大对抗优势", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "表现为对五种竞争力量的对抗上：\n• 企业处于低成本地位，可以抵挡现有竞争对手的对抗。\n• 可以更好的抵御强有力的购买商的降价压力\n• 可以更好的应对强有力的供应商抬高企业所需资源的价格给企业造成的困境。\n• 建立巨大的生产规模和成本优势，对新进入者构成进入障碍。\n• 与代用品竞争时，低成本的企业往往比本行业中的其他企业处于更有利的地位。", "id": "n_222", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_221", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "成本领先战略的四大风险", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 新加入者可能后来居上。\n• 技术进步可能降低企业资源的效用。\n• 丧失对市场变化的敏锐洞察力。\n• 受外部环境的影响大。", "id": "n_224", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_223", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_218", "depth": 3, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "差别化战略（差异化战略）的含义、利益、风险与误区", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "framework", "title": "差别化战略的含义与关键注意点（有差别≠差别化，必须获得高于行业平均水平的溢价）", "tag": "辨析", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 差别化战略的含义：差别化战略的根本是通过提高顾客效用来提高顾客价值。如果顾客能够感知其产品与服务的独特性，总会有一部分顾客愿意为此支付较高的溢价，相应的，企业也可能获得较高的利润。\n• 注意：向顾客提供较之竞争者有差别的产品和服务，并不一定就是差别化，差别化除了上述条件，还必须能够获得高于行业平均水平的溢价。", "id": "n_227", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_226", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "差别化战略的利益（顾客忠诚度）与三大风险", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 利益：能建立起顾客对产品和服务的忠诚度，从而在与五种竞争力量的竞争中处于有利地位。\n• 风险：（1）面临奉行低成本战略企业的威胁；（2）买方需要的差异化程度下降带来的威胁；（3）模仿者的威胁。", "id": "n_229", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_228", "depth": 4, "theme": "violet", "hasStarBranch": true}, {"type": "framework", "title": "差别化战略实施的五大误区", "tag": "要点", "examMust": true, "star": true, "children": [{"type": "verbatim", "title": "• 无价值的独特性\n• 过度差异化\n• 定价过高\n• 忽视顾客对价值信号的需求\n• 只重视产品而不重视整个价值链", "id": "n_231", "depth": 5, "theme": "violet", "hasStarBranch": false}], "id": "n_230", "depth": 4, "theme": "violet", "hasStarBranch": true}], "id": "n_225", "depth": 3, "theme": "violet", "hasStarBranch": true}], "depth": 2, "theme": "violet", "hasStarBranch": true}], "depth": 1, "hasStarBranch": true}], "depth": 0, "hasStarBranch": true};
+
+  const workspace = document.getElementById('workspace');
+  const stage = document.getElementById('mindmapStage');
+  const svg = document.getElementById('connectorSvg');
+  const treeRoot = document.getElementById('treeRoot');
+
+  const btnModeOutline = document.getElementById('btnModeOutline');
+  const btnModeFramework = document.getElementById('btnModeFramework');
+  const btnModeAll = document.getElementById('btnModeAll');
+  const btnModeStar = document.getElementById('btnModeStar');
+  const modeButtons = [btnModeOutline, btnModeFramework, btnModeAll, btnModeStar];
+
+  const btnViewMindmap = document.getElementById('btnViewMindmap');
+  const btnViewOutline = document.getElementById('btnViewOutline');
+  const btnDarkToggle = document.getElementById('btnDarkToggle');
+
+  // Map id -> { data, el, toggleBtn, childrenCol }
+  const nodeMap = new Map();
+  let currentMode = 'framework'; // Default: 看完整框架
+  let userPreferredDesktopView = 'mindmap'; // Desktop default: 导图视图
+  let effectiveView = 'mindmap';
+  let starFilterActive = false;
+
+  const TAG_META = {
+    '辨析': { cls: 'badge-diff', text: '⚖️ 辨析' },
+    '定义': { cls: 'badge-def', text: '📌 定义' },
+    '要点': { cls: 'badge-list', text: '🔢 要点' }
+  };
+
+  function createBadge(cls, text) {
+    const span = document.createElement('span');
+    span.className = 'badge ' + cls;
+    span.textContent = text;
+    return span;
+  }
+
+  function buildDOM(node) {
+    const branch = document.createElement('div');
+    branch.className = `tree-branch depth-${node.depth} theme-${node.theme}`;
+    branch.dataset.id = node.id;
+    branch.dataset.depth = String(node.depth);
+    branch.dataset.type = node.type;
+    if (node.star) branch.classList.add('is-star-node');
+    if (node.examMust) branch.classList.add('is-must-node');
+
+    const nodeCol = document.createElement('div');
+    nodeCol.className = 'node-col';
+
+    const card = document.createElement('div');
+    card.className = 'node-card';
+
+    const badgesWrap = document.createElement('div');
+    badgesWrap.className = 'node-badges';
+
+    if (node.badge) {
+      badgesWrap.appendChild(createBadge('badge-chapter', node.badge));
+    }
+    if (node.examMust && node.type !== 'chapter') {
+      badgesWrap.appendChild(createBadge('badge-must', '🔥 必考'));
+    }
+    if (node.star && node.type === 'framework') {
+      badgesWrap.appendChild(createBadge('badge-star', '★ 重点'));
+    } else if (node.star && node.type === 'section' && node.examMust) {
+      badgesWrap.appendChild(createBadge('badge-star', '★ 重点'));
+    }
+    if (node.tag && TAG_META[node.tag]) {
+      badgesWrap.appendChild(createBadge(TAG_META[node.tag].cls, TAG_META[node.tag].text));
+    }
+    if (node.page) {
+      badgesWrap.appendChild(createBadge('badge-page', '📖 ' + node.page));
+    }
+    if (node.type === 'verbatim') {
+      badgesWrap.appendChild(createBadge('badge-orig', '📄 原文'));
+    }
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'node-title';
+    titleEl.textContent = node.title;
+
+    card.appendChild(badgesWrap);
+    card.appendChild(titleEl);
+    nodeCol.appendChild(card);
+
+    let toggleBtn = null;
+    let childrenCol = null;
+    const children = node.children || [];
+
+    if (children.length > 0) {
+      toggleBtn = document.createElement('button');
+      toggleBtn.type = 'button';
+      toggleBtn.className = 'toggle-btn';
+      toggleBtn.textContent = '−';
+      toggleBtn.setAttribute('aria-label', '收起或展开下级节点');
+      toggleBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleNode(node.id);
+      });
+
+      card.addEventListener('click', function() {
+        toggleNode(node.id);
+      });
+
+      nodeCol.appendChild(toggleBtn);
+
+      childrenCol = document.createElement('div');
+      childrenCol.className = 'children-col';
+      for (const child of children) {
+        childrenCol.appendChild(buildDOM(child));
+      }
+    }
+
+    branch.appendChild(nodeCol);
+    if (childrenCol) {
+      branch.appendChild(childrenCol);
+    }
+
+    nodeMap.set(node.id, {
+      data: node,
+      el: branch,
+      card: card,
+      nodeCol: nodeCol,
+      toggleBtn: toggleBtn,
+      childrenCol: childrenCol
+    });
+
+    return branch;
+  }
+
+  function setCollapsed(id, collapsed) {
+    const rec = nodeMap.get(id);
+    if (!rec || !rec.toggleBtn) return;
+    if (collapsed) {
+      rec.el.classList.add('is-collapsed');
+      rec.toggleBtn.textContent = '+';
+      rec.toggleBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      rec.el.classList.remove('is-collapsed');
+      rec.toggleBtn.textContent = '−';
+      rec.toggleBtn.setAttribute('aria-expanded', 'true');
+    }
+  }
+
+  function toggleNode(id) {
+    const rec = nodeMap.get(id);
+    if (!rec || !rec.toggleBtn) return;
+    const isNowCollapsed = !rec.el.classList.contains('is-collapsed');
+    setCollapsed(id, isNowCollapsed);
+    relayoutAndDraw();
+  }
+
+  function applyStarFilter(enableStarOnly) {
+    starFilterActive = enableStarOnly;
+    for (const [id, rec] of nodeMap.entries()) {
+      const n = rec.data;
+      if (!enableStarOnly) {
+        rec.el.classList.remove('is-hidden-star');
+      } else {
+        // Verbatim nodes stay available under their kept ★ framework parent;
+        // non-★ framework/section/chapter branches are hidden.
+        if (n.type !== 'verbatim' && !n.hasStarBranch) {
+          rec.el.classList.add('is-hidden-star');
+        } else {
+          rec.el.classList.remove('is-hidden-star');
+        }
+      }
+    }
+  }
+
+  function applyMode(mode) {
+    currentMode = mode;
+    for (const btn of modeButtons) {
+      btn.classList.toggle('is-active', btn.dataset.mode === mode);
+    }
+
+    if (mode === 'outline') {
+      // 只看大纲：只显示各章小节（depth 0, 1 展开；depth >= 2 收起）
+      applyStarFilter(false);
+      for (const [id, rec] of nodeMap.entries()) {
+        if (!rec.toggleBtn) continue;
+        setCollapsed(id, rec.data.depth >= 2);
+      }
+    } else if (mode === 'framework') {
+      // 看完整框架：展开所有框架节点，原文先收起（默认状态）
+      applyStarFilter(false);
+      for (const [id, rec] of nodeMap.entries()) {
+        if (!rec.toggleBtn) continue;
+        const allChildrenVerbatim = (rec.data.children || []).every(c => c.type === 'verbatim');
+        setCollapsed(id, allChildrenVerbatim);
+      }
+    } else if (mode === 'all') {
+      // 全部展开（含原文）
+      applyStarFilter(false);
+      for (const [id, rec] of nodeMap.entries()) {
+        if (!rec.toggleBtn) continue;
+        setCollapsed(id, false);
+      }
+    } else if (mode === 'star') {
+      // 只看★重点：隐藏没有★的框架分支，展开所有★框架节点（原文先收起，可随时点 + 展开）
+      applyStarFilter(true);
+      for (const [id, rec] of nodeMap.entries()) {
+        if (!rec.toggleBtn) continue;
+        const allChildrenVerbatim = (rec.data.children || []).every(c => c.type === 'verbatim');
+        setCollapsed(id, allChildrenVerbatim);
+      }
+    }
+
+    relayoutAndDraw();
+  }
+
+  function syncResponsiveView() {
+    const isMobile = window.innerWidth < 760;
+    if (isMobile) {
+      effectiveView = 'outline';
+      btnViewMindmap.disabled = true;
+      btnViewMindmap.classList.remove('is-active');
+      btnViewOutline.classList.add('is-active');
+    } else {
+      btnViewMindmap.disabled = false;
+      effectiveView = userPreferredDesktopView;
+      btnViewMindmap.classList.toggle('is-active', effectiveView === 'mindmap');
+      btnViewOutline.classList.toggle('is-active', effectiveView === 'outline');
+    }
+
+    workspace.classList.toggle('view-mindmap', effectiveView === 'mindmap');
+    workspace.classList.toggle('view-outline', effectiveView === 'outline');
+    relayoutAndDraw();
+  }
+
+  function findMaxVisibleDepth(node) {
+    const rec = nodeMap.get(node.id);
+    if (!rec || rec.el.classList.contains('is-hidden-star')) return -1;
+    let maxD = node.depth;
+    if (!rec.el.classList.contains('is-collapsed') && node.children) {
+      for (const ch of node.children) {
+        const cd = findMaxVisibleDepth(ch);
+        if (cd > maxD) maxD = cd;
+      }
+    }
+    return maxD;
+  }
+
+  function updateColumnWidths() {
+    if (effectiveView !== 'mindmap') return;
+    const availW = stage.clientWidth;
+    if (availW <= 0) return;
+
+    const maxD = Math.max(1, findMaxVisibleDepth(DATA));
+    let gapX;
+    if (maxD <= 2) {
+      gapX = Math.min(44, Math.max(18, Math.floor(availW * 0.035)));
+    } else if (maxD <= 4) {
+      gapX = Math.min(26, Math.max(12, Math.floor(availW * 0.019)));
+    } else {
+      gapX = Math.min(20, Math.max(10, Math.floor(availW * 0.014)));
+    }
+
+    const usableW = Math.max(300, availW - maxD * gapX - 4);
+
+    let weights, caps;
+    if (maxD === 1) {
+      weights = [0.35, 0.65];
+      caps = [180, 320];
+    } else if (maxD === 2) {
+      weights = [0.20, 0.36, 0.44];
+      caps = [165, 270, 340];
+    } else if (maxD === 3) {
+      weights = [0.13, 0.21, 0.27, 0.39];
+      caps = [145, 225, 275, 420];
+    } else if (maxD === 4) {
+      weights = [0.095, 0.145, 0.18, 0.255, 0.325];
+      caps = [128, 195, 240, 345, 460];
+    } else {
+      weights = [0.072, 0.108, 0.135, 0.175, 0.205, 0.305];
+      caps = [108, 160, 195, 255, 300, 520];
+    }
+
+    stage.style.setProperty('--gap-x', gapX + 'px');
+    for (let d = 0; d <= 5; d++) {
+      if (d <= maxD) {
+        const w = Math.min(caps[d], Math.floor(usableW * weights[d]));
+        stage.style.setProperty(`--col-${d}`, w + 'px');
+      }
+    }
+  }
+
+  function getStrokeColor(theme) {
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (theme === 'teal') return isDark ? '#2dd4bf' : '#14b8a6';
+    if (theme === 'indigo') return isDark ? '#818cf8' : '#6366f1';
+    if (theme === 'violet') return isDark ? '#c084fc' : '#8b5cf6';
+    return isDark ? '#64748b' : '#94a3b8';
+  }
+
+  function drawConnectors() {
+    if (effectiveView !== 'mindmap') {
+      svg.innerHTML = '';
+      return;
+    }
+
+    const stageRect = stage.getBoundingClientRect();
+    svg.setAttribute('width', Math.floor(stageRect.width));
+    svg.setAttribute('height', Math.floor(stageRect.height));
+
+    const paths = [];
+
+    for (const [id, rec] of nodeMap.entries()) {
+      if (!rec.childrenCol) continue;
+      if (rec.el.classList.contains('is-hidden-star')) continue;
+      if (rec.el.offsetParent === null) continue;
+
+      const cardRect = rec.card.getBoundingClientRect();
+      const anchorEl = rec.toggleBtn || rec.card;
+      const pRect = anchorEl.getBoundingClientRect();
+      const strokeSelf = getStrokeColor(rec.data.theme);
+
+      // Draw short stem from card right edge to toggleBtn left edge
+      if (rec.toggleBtn && pRect.left > cardRect.right) {
+        const sy = pRect.top + pRect.height / 2 - stageRect.top;
+        paths.push(
+          `<line x1="${(cardRect.right - stageRect.left).toFixed(1)}" y1="${sy.toFixed(1)}" x2="${(pRect.left - stageRect.left).toFixed(1)}" y2="${sy.toFixed(1)}" stroke="${strokeSelf}" stroke-width="1.6"/>`
+        );
+      }
+
+      if (rec.el.classList.contains('is-collapsed')) continue;
+
+      const x1 = pRect.right - stageRect.left;
+      const y1 = pRect.top + pRect.height / 2 - stageRect.top;
+
+      for (const childData of (rec.data.children || [])) {
+        const childRec = nodeMap.get(childData.id);
+        if (!childRec || childRec.el.classList.contains('is-hidden-star')) continue;
+        if (childRec.card.offsetParent === null) continue;
+
+        const cRect = childRec.card.getBoundingClientRect();
+        const x2 = cRect.left - stageRect.left;
+        const y2 = cRect.top + cRect.height / 2 - stageRect.top;
+
+        const dx = Math.max(10, (x2 - x1) * 0.52);
+        const stroke = getStrokeColor(childData.theme);
+        const sw = rec.data.depth === 0 ? '2.2' : (childData.type === 'verbatim' ? '1.3' : '1.7');
+        const dash = childData.type === 'verbatim' ? ' stroke-dasharray="4 3"' : '';
+        paths.push(
+          `<path d="M ${x1.toFixed(1)} ${y1.toFixed(1)} C ${(x1 + dx).toFixed(1)} ${y1.toFixed(1)}, ${(x2 - dx).toFixed(1)} ${y2.toFixed(1)}, ${x2.toFixed(1)} ${y2.toFixed(1)}" fill="none" stroke="${stroke}" stroke-width="${sw}" stroke-linecap="round"${dash}/>`
+        );
+      }
+    }
+
+    svg.innerHTML = paths.join('');
+  }
+
+  let rafId = null;
+  function relayoutAndDraw() {
+    updateColumnWidths();
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(function() {
+      updateColumnWidths();
+      drawConnectors();
+    });
+  }
+
+  // Render Tree
+  treeRoot.appendChild(buildDOM(DATA));
+
+  // Mode Button Events
+  for (const btn of modeButtons) {
+    btn.addEventListener('click', function() {
+      applyMode(btn.dataset.mode);
+    });
+  }
+
+  // View Switcher Events
+  btnViewMindmap.addEventListener('click', function() {
+    if (window.innerWidth < 760) return;
+    userPreferredDesktopView = 'mindmap';
+    syncResponsiveView();
+  });
+
+  btnViewOutline.addEventListener('click', function() {
+    userPreferredDesktopView = 'outline';
+    syncResponsiveView();
+  });
+
+  // Dark Mode Toggle
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    btnDarkToggle.textContent = theme === 'dark' ? '☀️ 浅色模式' : '🌙 深色模式';
+    drawConnectors();
+  }
+
+  btnDarkToggle.addEventListener('click', function() {
+    const cur = document.documentElement.getAttribute('data-theme');
+    setTheme(cur === 'dark' ? 'light' : 'dark');
+  });
+
+  // Print Mode: Auto-expand everything on beforeprint, restore on afterprint
+  let savedPrintState = null;
+  window.addEventListener('beforeprint', function() {
+    savedPrintState = {
+      collapsedIds: [],
+      starFilterActive: starFilterActive
+    };
+    for (const [id, rec] of nodeMap.entries()) {
+      if (rec.el.classList.contains('is-collapsed')) {
+        savedPrintState.collapsedIds.push(id);
+      }
+      setCollapsed(id, false);
+      rec.el.classList.remove('is-hidden-star');
+    }
+  });
+
+  window.addEventListener('afterprint', function() {
+    if (!savedPrintState) return;
+    applyStarFilter(savedPrintState.starFilterActive);
+    const collapsedSet = new Set(savedPrintState.collapsedIds);
+    for (const [id, rec] of nodeMap.entries()) {
+      if (rec.toggleBtn) {
+        setCollapsed(id, collapsedSet.has(id));
+      }
+    }
+    savedPrintState = null;
+    relayoutAndDraw();
+  });
+
+  // Resize Handling
+  window.addEventListener('resize', function() {
+    syncResponsiveView();
+  });
+
+  if (typeof ResizeObserver !== 'undefined') {
+    const ro = new ResizeObserver(function() {
+      if (effectiveView === 'mindmap') {
+        drawConnectors();
+      }
+    });
+    ro.observe(treeRoot);
+  }
+
+  // Initialize Default State ("看完整框架" + responsive view)
+  document.getElementById('statsPill').textContent =
+    `3章 · 16节 · 128个考点（★重点 105 处）`;
+  applyMode('framework');
+  syncResponsiveView();
+})();
+</script>
+</body>
+</html>
